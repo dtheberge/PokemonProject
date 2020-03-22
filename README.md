@@ -1,16 +1,6 @@
 # PokemonProject
-                                  ,'\
-    _.----.        ____         ,'  _\   ___    ___     ____
-_,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`.
-\      __    \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |
- \.    \ \   |  __  |  |/    ,','_  `.  |          | __  |    \|  |
-   \    \/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |
-    \     ,-'/  /   \    ,'   | \/ / ,`.|         /  /   \  |     |
-     \    \ |   \_/  |   `-.  \    `'  /|  |    ||   \_/  | |\    |
-      \    \ \      /       `-.`.___,-' |  |\  /| \      /  | |   |
-       \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |
-        \_.-'       |__|    `-._ |              '-.|     '-.| |   |
-                                `'                            '-._|
+
+![Image of Pokemon](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DgiaTPT1k9PM&psig=AOvVaw3BsizcNq_nM7rbOLAxPRa-&ust=1584947448003000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjbycDDregCFQAAAAAdAAAAABAQ)
                                 
 Recreation of Pokemon Red/Blue within the constraints of the terminal with no GUI.
 Primary Purpose: University of South Florida Object Oriented Programming C++ Project.
