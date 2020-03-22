@@ -23,7 +23,7 @@ int NPC::NPC_Count = 0;
 
 int main()
 {
-
+  // test
   std::map<string, string (*)(POKEMON Attacker, POKEMON Defender)> functions;
 
   //SPECIAL ATTACKS
