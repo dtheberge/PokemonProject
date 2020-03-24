@@ -2,6 +2,7 @@
 #define ATTACK_H
 
 #include <string>
+
 #include "ENUMS.h"
 
 using namespace ENUMS;
@@ -18,7 +19,6 @@ class ATTACK
     int Condition_Chance;
     CONDITION Condition;
 
-
     void set_Name();
     void set_Type();
     void set_DMG();
@@ -26,7 +26,6 @@ class ATTACK
     void set_PP();
     void set_ConditionChance();
     void set_Condition();
-
 
   public:
     ATTACK();
