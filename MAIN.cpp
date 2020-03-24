@@ -49,5 +49,8 @@ int main()
 
   ATT_FUNCT_CALL(FunctionDesired, pokemon1, pokemon1);
 
+  cout << endl << endl;
+  pokemon1.get_Seen();
+
   return 0;
 }
