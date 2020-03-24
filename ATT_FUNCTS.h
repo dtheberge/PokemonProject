@@ -3,557 +3,728 @@
 #ifndef ATT_FUNCTS_H
 #define ATT_FUNCTS_H
 
+#include <iostream>
+#include <string>
+
+using std::string;
+using std::cout;
+
 namespace ATT_FUNCTS
 {
+  enum ATTACK_FUNCT
+  {
+    //SPECIAL ATTACKS
+    ABSORB, ACID, AURORA_BEAM,
+    BLIZZARD, BUBBLE, BUBBLE_BEAM,
+    CONFUSION,
+    DRAGON_RAGE, DREAM_EATER,
+    EMBER,
+    FIRE_BLAST, FIRE_SPIN, FLAMETHROWER,
+    GUST,
+    HYDRO_PUMP, HYPER_BEAM,
+    ICE_BEAM,
+    MEGA_DRAIN,
+    NIGHT_SHADE,
+    PETAL_DANCE, PSYBEAM, PSYCHIC, PSYWAVE,
+    RAZOR_WIND,
+    SLUDGE, SMOG, SOLAR_BEAM, SONIC_BOOM, SURF, SWIFT,
+    THUNDER, THUNDER_SHOCK, THUNDERBOLT, TRI_ATTACK,
+    WATER_GUN,
+
+    //PHYSICAL ATTACKS
+    BARRAGE, BIDE, BIND, BITE, BODY_SLAM, BONE_CLUB, BONEMERANG,
+    CLAMP, COMET_PUNCH, CONSTRICT, COUNTER, CRABHAMMER, CUT,
+    DIG, DIZZY_PUNCH, DOUBLE_KICK, DOUBLE_SLAP, DOUBLE_EDGE, DRILL_PECK,
+    EARTHQUAKE, EGG_BOMB, EXPLOSION,
+    FIRE_PUNCH, FISSURE, FLY, FURY_ATTACK, FURY_SWIPES,
+    GUILLOTINE,
+    HEADBUTT, HIGH_JUMP_KICK, HORN_ATTACK, HORN_DRILL, HYPER_FANG,
+    ICE_PUNCH,
+    JUMP_KICK,
+    KARATE_CHOP,
+    LEECH_LIFE, LICK, LOW_KICK,
+    MEGA_KICK, MEGA_PUNCH,
+    PAY_DAY, PECK, PIN_MISSILE, POISON_STING, POUND,
+    QUICK_ATTACK,
+    RAGE, RAZOR_LEAF, ROCK_SLIDE, ROCK_THROW, ROLLING_KICK,
+    SCRATCH, SEISMIC_TOSS, SELF_DESTRUCT, SKULL_BASH, SKY_ATTACK, SLAM,
+    SLASH, SPIKE_CANNON, STOMP,STRENGTH,STRUGGLE, SUBMISSION, SUPER_FANG,
+    TACKLE, TAKE_DOWN, THRASH, THUNDER_PUNCH, TWINEEDLE,
+    VINE_WHIP, VISE_GRIP,
+    WATERFALL, WING_ATTACK, WRAP
+  };
+
   //SPECIAL ATTACKS
-  string Absorb(POKEMON Attacker, POKEMON Defender)
+  void Absorb(POKEMON Attacker, POKEMON Defender)
   {
-    return "Absorb Function was called";
+    cout << "Absorb Function was called.";
   }
 
-  string Acid(POKEMON Attacker, POKEMON Defender)
+  void Acid(POKEMON Attacker, POKEMON Defender)
   {
-    return "Acid Function was called";
-  }
-  string Aurora_Beam(POKEMON Attacker, POKEMON Defender)
-  {
-    return "Aurora Beam Function was called";
+    cout << "Acid Function was called.";
   }
 
-  string Blizzard(POKEMON Attacker, POKEMON Defender)
+  void Aurora_Beam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Blizzard Function was called";
+    cout << "Aurora Beam Function was called.";
   }
 
-  string Bubble(POKEMON Attacker, POKEMON Defender)
+  void Blizzard(POKEMON Attacker, POKEMON Defender)
   {
-    return "Bubble Function was called";
+    cout << "Blizzard Function was called.";
   }
 
-  string Bubble_Beam(POKEMON Attacker, POKEMON Defender)
+  void Bubble(POKEMON Attacker, POKEMON Defender)
   {
-    return "Bubble Beam Function was called";
+    cout << "Bubble Function was called.";
   }
 
-  string Confusion(POKEMON Attacker, POKEMON Defender)
+  void Bubble_Beam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Confusion Function was called";
+    cout << "Bubble Beam Function was called.";
   }
 
-  string Dragon_Rage(POKEMON Attacker, POKEMON Defender)
+  void Confusion(POKEMON Attacker, POKEMON Defender)
   {
-    return "Dragon Rage Function was called";
+    cout << "Confusion Function was called.";
   }
 
-  string Dream_Eater(POKEMON Attacker, POKEMON Defender)
+  void Dragon_Rage(POKEMON Attacker, POKEMON Defender)
   {
-    return "Dream Eater Function was called";
+    cout << "Dragon Rage Function was called.";
   }
 
-  string Ember(POKEMON Attacker, POKEMON Defender)
+  void Dream_Eater(POKEMON Attacker, POKEMON Defender)
   {
-    return "Ember Function was called";
-  }
-  string Fire_Blast(POKEMON Attacker, POKEMON Defender)
-  {
-    return "Fire Blast Function was called";
+    cout << "Dream Eater Function was called.";
   }
 
-  string Fire_Spin(POKEMON Attacker, POKEMON Defender)
+  void Ember(POKEMON Attacker, POKEMON Defender)
   {
-    return "Fire Spin Function was called";
+    cout << "Ember Function was called.";
+  }
+  void Fire_Blast(POKEMON Attacker, POKEMON Defender)
+  {
+    cout << "Fire Blast Function was called.";
   }
 
-  string Flamethrower(POKEMON Attacker, POKEMON Defender)
+  void Fire_Spin(POKEMON Attacker, POKEMON Defender)
   {
-    return "Flamethrower Function was called";
+    cout << "Fire Spin Function was called.";
   }
 
-  string Gust(POKEMON Attacker, POKEMON Defender)
+  void Flamethrower(POKEMON Attacker, POKEMON Defender)
   {
-    return "Gust Function was called";
+    cout << "Flamethrower Function was called.";
   }
 
-  string Hydro_Pump(POKEMON Attacker, POKEMON Defender)
+  void Gust(POKEMON Attacker, POKEMON Defender)
   {
-    return "Hydro Pump Function was called";
+    cout << "Gust Function was called.";
   }
 
-  string Hyper_Beam(POKEMON Attacker, POKEMON Defender)
+  void Hydro_Pump(POKEMON Attacker, POKEMON Defender)
   {
-    return "Hyper Beam Function was called";
+    cout << "Hydro Pump Function was called.";
   }
 
-  string Ice_Beam(POKEMON Attacker, POKEMON Defender)
+  void Hyper_Beam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Ice Beam Function was called";
+    cout << "Hyper Beam Function was called.";
   }
 
-  string Mega_Drain(POKEMON Attacker, POKEMON Defender)
+  void Ice_Beam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Mega Drain Function was called";
+    cout << "Ice Beam Function was called.";
   }
 
-  string Night_Shade(POKEMON Attacker, POKEMON Defender)
+  void Mega_Drain(POKEMON Attacker, POKEMON Defender)
   {
-    return "Night Shade Function was called";
+    cout << "Mega Drain Function was called.";
   }
 
-  string Petal_Dance(POKEMON Attacker, POKEMON Defender)
+  void Night_Shade(POKEMON Attacker, POKEMON Defender)
   {
-    return "Petal Dance Function was called";
+    cout << "Night Shade Function was called.";
   }
 
-  string Psybeam(POKEMON Attacker, POKEMON Defender)
+  void Petal_Dance(POKEMON Attacker, POKEMON Defender)
   {
-    return "Psybeam Function was called";
+    cout << "Petal Dance Function was called.";
   }
 
-  string Psychic(POKEMON Attacker, POKEMON Defender)
+  void Psybeam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Psychic Function was called";
+    cout << "Psybeam Function was called.";
   }
 
-  string Psywave(POKEMON Attacker, POKEMON Defender)
+  void Psychic(POKEMON Attacker, POKEMON Defender)
   {
-    return "Psywave Function was called";
+    cout << "Psychic Function was called.";
   }
 
-  string Razor_Wind(POKEMON Attacker, POKEMON Defender)
+  void Psywave(POKEMON Attacker, POKEMON Defender)
   {
-    return "Razor Wind Function was called";
+    cout << "Psywave Function was called.";
   }
 
-  string Sludge(POKEMON Attacker, POKEMON Defender)
+  void Razor_Wind(POKEMON Attacker, POKEMON Defender)
   {
-    return "Sludge Function was called";
+    cout << "Razor Wind Function was called.";
   }
 
-  string Smog(POKEMON Attacker, POKEMON Defender)
+  void Sludge(POKEMON Attacker, POKEMON Defender)
   {
-    return "Smog Function was called";
+    cout << "Sludge Function was called.";
   }
 
-  string Solar_Beam(POKEMON Attacker, POKEMON Defender)
+  void Smog(POKEMON Attacker, POKEMON Defender)
   {
-    return "Solar Beam Function was called";
+    cout << "Smog Function was called.";
   }
 
-  string Sonic_Boom(POKEMON Attacker, POKEMON Defender)
+  void Solar_Beam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Sonic Boom Function was called";
+    cout << "Solar Beam Function was called.";
   }
 
-  string Surf(POKEMON Attacker, POKEMON Defender)
+  void Sonic_Boom(POKEMON Attacker, POKEMON Defender)
   {
-    return "Surf Function was called";
+    cout << "Sonic Boom Function was called.";
   }
 
-  string Swift(POKEMON Attacker, POKEMON Defender)
+  void Surf(POKEMON Attacker, POKEMON Defender)
   {
-    return "Swift Function was called";
+    cout << "Surf Function was called.";
   }
 
-  string Thunder(POKEMON Attacker, POKEMON Defender)
+  void Swift(POKEMON Attacker, POKEMON Defender)
   {
-    return "Thunder Function was called";
+    cout << "Swift Function was called.";
   }
 
-  string Thunder_Shock(POKEMON Attacker, POKEMON Defender)
+  void Thunder(POKEMON Attacker, POKEMON Defender)
   {
-    return "Thunder Shock Function was called";
+    cout << "Thunder Function was called.";
   }
 
-  string Thunderbolt(POKEMON Attacker, POKEMON Defender)
+  void Thunder_Shock(POKEMON Attacker, POKEMON Defender)
   {
-    return "Thunderbolt Function was called";
+    cout << "Thunder Shock Function was called.";
   }
 
-  string Tri_Attack(POKEMON Attacker, POKEMON Defender)
+  void Thunderbolt(POKEMON Attacker, POKEMON Defender)
   {
-    return "Tri Attack Function was called";
+    cout << "Thunderbolt Function was called.";
   }
 
-  string Water_Gun(POKEMON Attacker, POKEMON Defender)
+  void Tri_Attack(POKEMON Attacker, POKEMON Defender)
   {
-    return "Water Gun Function was called";
+    cout << "Tri Attack Function was called.";
+  }
+
+  void Water_Gun(POKEMON Attacker, POKEMON Defender)
+  {
+    cout << "Water Gun Function was called.";
   }
 
 
   //PHYSICAL ATTACKS
-  string Barrage(POKEMON Attacker, POKEMON Defender)
+  void Barrage(POKEMON Attacker, POKEMON Defender)
   {
-    return "Barrage Function was called";
+    cout << "Barrage Function was called.";
   }
 
-  string Bide(POKEMON Attacker, POKEMON Defender)
+  void Bide(POKEMON Attacker, POKEMON Defender)
   {
-    return "Bide Function was called";
+    cout << "Bide Function was called.";
   }
 
-  string Bind(POKEMON Attacker, POKEMON Defender)
+  void Bind(POKEMON Attacker, POKEMON Defender)
   {
-    return "Bind Function was called";
+    cout << "Bind Function was called.";
   }
 
-  string Bite(POKEMON Attacker, POKEMON Defender)
+  void Bite(POKEMON Attacker, POKEMON Defender)
   {
-    return "Bite Function was called";
+    cout << "Bite Function was called.";
   }
 
-  string Body_Slam(POKEMON Attacker, POKEMON Defender)
+  void Body_Slam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Body Slam Function was called";
+    cout << "Body Slam Function was called.";
   }
 
-  string Bone_Club(POKEMON Attacker, POKEMON Defender)
+  void Bone_Club(POKEMON Attacker, POKEMON Defender)
   {
-    return "Bone Club Function was called";
+    cout << "Bone Club Function was called.";
   }
 
-  string Bonemerang(POKEMON Attacker, POKEMON Defender)
+  void Bonemerang(POKEMON Attacker, POKEMON Defender)
   {
-    return "Bonemerang Function was called";
+    cout << "Bonemerang Function was called.";
   }
 
-  string Clamp(POKEMON Attacker, POKEMON Defender)
+  void Clamp(POKEMON Attacker, POKEMON Defender)
   {
-    return "Clamp Function was called";
+    cout << "Clamp Function was called.";
   }
 
-  string Comet_Punch(POKEMON Attacker, POKEMON Defender)
+  void Comet_Punch(POKEMON Attacker, POKEMON Defender)
   {
-    return "Comet Punch Function was called";
+    cout << "Comet Punch Function was called.";
   }
 
-  string Constrict(POKEMON Attacker, POKEMON Defender)
+  void Constrict(POKEMON Attacker, POKEMON Defender)
   {
-    return "Constrict Function was called";
+    cout << "Constrict Function was called.";
   }
 
-  string Counter(POKEMON Attacker, POKEMON Defender)
+  void Counter(POKEMON Attacker, POKEMON Defender)
   {
-    return "Counter Function was called";
+    cout << "Counter Function was called.";
   }
 
-  string Crabhammer(POKEMON Attacker, POKEMON Defender)
+  void Crabhammer(POKEMON Attacker, POKEMON Defender)
   {
-    return "Crabhammer Function was called";
+    cout << "Crabhammer Function was called.";
   }
 
-  string Cut(POKEMON Attacker, POKEMON Defender)
+  void Cut(POKEMON Attacker, POKEMON Defender)
   {
-    return "Cut Function was called";
+    cout << "Cut Function was called.";
   }
 
-  string Dig(POKEMON Attacker, POKEMON Defender)
+  void Dig(POKEMON Attacker, POKEMON Defender)
   {
-    return "Dig Function was called";
+    cout << "Dig Function was called.";
   }
 
-  string Dizzy_Punch(POKEMON Attacker, POKEMON Defender)
+  void Dizzy_Punch(POKEMON Attacker, POKEMON Defender)
   {
-    return "Dizzy Punch Function was called";
+    cout << "Dizzy Punch Function was called.";
   }
 
-  string Double_Kick(POKEMON Attacker, POKEMON Defender)
+  void Double_Kick(POKEMON Attacker, POKEMON Defender)
   {
-    return "Double Kick Function was called";
+    cout << "Double Kick Function was called.";
   }
 
-  string Double_Slap(POKEMON Attacker, POKEMON Defender)
+  void Double_Slap(POKEMON Attacker, POKEMON Defender)
   {
-    return "Double Slap Function was called";
+    cout << "Double Slap Function was called.";
   }
 
-  string Double_Edge(POKEMON Attacker, POKEMON Defender)
+  void Double_Edge(POKEMON Attacker, POKEMON Defender)
   {
-    return "Double-Edge Function was called";
+    cout << "Double_Edge Function was called.";
   }
 
-  string Drill_Peck(POKEMON Attacker, POKEMON Defender)
+  void Drill_Peck(POKEMON Attacker, POKEMON Defender)
   {
-    return "Drill Peck Function was called";
+    cout << "Drill Peck Function was called.";
   }
 
-  string Earthquake(POKEMON Attacker, POKEMON Defender)
+  void Earthquake(POKEMON Attacker, POKEMON Defender)
   {
-    return "Earthquake Function was called";
+    cout << "Earthquake Function was called.";
   }
 
-  string Egg_Bomb(POKEMON Attacker, POKEMON Defender)
+  void Egg_Bomb(POKEMON Attacker, POKEMON Defender)
   {
-    return "Egg Bomb Function was called";
+    cout << "Egg Bomb Function was called.";
   }
 
-  string Explosion(POKEMON Attacker, POKEMON Defender)
+  void Explosion(POKEMON Attacker, POKEMON Defender)
   {
-    return "Explosion Function was called";
+    cout << "Explosion Function was called.";
   }
 
-  string Fire_Punch(POKEMON Attacker, POKEMON Defender)
+  void Fire_Punch(POKEMON Attacker, POKEMON Defender)
   {
-    return "Fire Punch Function was called";
+    cout << "Fire Punch Function was called.";
   }
 
-  string Fissure(POKEMON Attacker, POKEMON Defender)
+  void Fissure(POKEMON Attacker, POKEMON Defender)
   {
-    return "Fissure Function was called";
+    cout << "Fissure Function was called.";
   }
 
-  string Fly(POKEMON Attacker, POKEMON Defender)
+  void Fly(POKEMON Attacker, POKEMON Defender)
   {
-    return "Fly Function was called";
+    cout << "Fly Function was called.";
   }
 
-  string Fury_Attack(POKEMON Attacker, POKEMON Defender)
+  void Fury_Attack(POKEMON Attacker, POKEMON Defender)
   {
-    return "Fury Attack Function was called";
+    cout << "Fury Attack Function was called.";
   }
 
-  string Fury_Swipes(POKEMON Attacker, POKEMON Defender)
+  void Fury_Swipes(POKEMON Attacker, POKEMON Defender)
   {
-    return "Fury Swipes Function was called";
+    cout << "Fury Swipes Function was called.";
   }
 
-  string Guillotine(POKEMON Attacker, POKEMON Defender)
+  void Guillotine(POKEMON Attacker, POKEMON Defender)
   {
-    return "Guillotine Function was called";
+    cout << "Guillotine Function was called.";
   }
 
-  string Headbutt(POKEMON Attacker, POKEMON Defender)
+  void Headbutt(POKEMON Attacker, POKEMON Defender)
   {
-    return "Headbutt Function was called";
+    cout << "Headbutt Function was called.";
   }
 
-  string High_Jump_Kick(POKEMON Attacker, POKEMON Defender)
+  void High_Jump_Kick(POKEMON Attacker, POKEMON Defender)
   {
-    return "High Jump Kick Function was called";
+    cout << "High Jump Kick Function was called.";
   }
 
-  string Horn_Attack(POKEMON Attacker, POKEMON Defender)
+  void Horn_Attack(POKEMON Attacker, POKEMON Defender)
   {
-    return "Horn Attack Function was called";
+    cout << "Horn Attack Function was called.";
   }
 
-  string Horn_Drill(POKEMON Attacker, POKEMON Defender)
+  void Horn_Drill(POKEMON Attacker, POKEMON Defender)
   {
-    return "Horn Drill Function was called";
+    cout << "Horn Drill Function was called.";
   }
 
-  string Hyper_Fang(POKEMON Attacker, POKEMON Defender)
+  void Hyper_Fang(POKEMON Attacker, POKEMON Defender)
   {
-    return "Hyper Fang Function was called";
+    cout << "Hyper Fang Function was called.";
   }
 
-  string Ice_Punch(POKEMON Attacker, POKEMON Defender)
+  void Ice_Punch(POKEMON Attacker, POKEMON Defender)
   {
-    return "Ice Punch Function was called";
+    cout << "Ice Punch Function was called.";
   }
 
-  string Jump_Kick(POKEMON Attacker, POKEMON Defender)
+  void Jump_Kick(POKEMON Attacker, POKEMON Defender)
   {
-    return "Jump Kick Function was called";
+    cout << "Jump Kick Function was called.";
   }
 
-  string Karate_Chop(POKEMON Attacker, POKEMON Defender)
+  void Karate_Chop(POKEMON Attacker, POKEMON Defender)
   {
-    return "Karate Chop Function was called";
+    cout << "Karate Chop Function was called.";
   }
 
-  string Leech_Life(POKEMON Attacker, POKEMON Defender)
+  void Leech_Life(POKEMON Attacker, POKEMON Defender)
   {
-    return "Leech Life Function was called";
+    cout << "Leech Life Function was called.";
   }
 
-  string Lick(POKEMON Attacker, POKEMON Defender)
+  void Lick(POKEMON Attacker, POKEMON Defender)
   {
-    return "Lick Function was called";
+    cout << "Lick Function was called.";
   }
 
-  string Low_Kick(POKEMON Attacker, POKEMON Defender)
+  void Low_Kick(POKEMON Attacker, POKEMON Defender)
   {
-    return "Low Kick Function was called";
+    cout << "Low Kick Function was called.";
   }
 
-  string Mega_Kick(POKEMON Attacker, POKEMON Defender)
+  void Mega_Kick(POKEMON Attacker, POKEMON Defender)
   {
-    return "Mega Kick Function was called";
+    cout << "Mega Kick Function was called.";
   }
 
-  string Mega_Punch(POKEMON Attacker, POKEMON Defender)
+  void Mega_Punch(POKEMON Attacker, POKEMON Defender)
   {
-    return "Mega Punch Function was called";
+    cout << "Mega Punch Function was called.";
   }
 
-  string Pay_Day(POKEMON Attacker, POKEMON Defender)
+  void Pay_Day(POKEMON Attacker, POKEMON Defender)
   {
-    return "Pay Day Function was called";
+    cout << "Pay Day Function was called.";
   }
 
-  string Peck(POKEMON Attacker, POKEMON Defender)
+  void Peck(POKEMON Attacker, POKEMON Defender)
   {
-    return "Peck Function was called";
+    cout << "Peck Function was called.";
   }
 
-  string Pin_Missile(POKEMON Attacker, POKEMON Defender)
+  void Pin_Missile(POKEMON Attacker, POKEMON Defender)
   {
-    return "Pin Missile Function was called";
+    cout << "Pin Missile Function was called.";
   }
 
-  string Poison_Sting(POKEMON Attacker, POKEMON Defender)
+  void Poison_Sting(POKEMON Attacker, POKEMON Defender)
   {
-    return "Poison Sting Function was called";
+    cout << "Poison Sting Function was called.";
   }
 
-  string Pound(POKEMON Attacker, POKEMON Defender)
+  void Pound(POKEMON Attacker, POKEMON Defender)
   {
-    return "Pound Function was called";
+    cout << "Pound Function was called.";
   }
 
-  string Quick_Attack(POKEMON Attacker, POKEMON Defender)
+  void Quick_Attack(POKEMON Attacker, POKEMON Defender)
   {
-    return "Quick Attack Function was called";
+    cout << "Quick Attack Function was called.";
   }
 
-  string Rage(POKEMON Attacker, POKEMON Defender)
+  void Rage(POKEMON Attacker, POKEMON Defender)
   {
-    return "Rage Function was called";
+    cout << "Rage Function was called.";
   }
 
-  string Razor_Leaf(POKEMON Attacker, POKEMON Defender)
+  void Razor_Leaf(POKEMON Attacker, POKEMON Defender)
   {
-    return "Razor Leaf Function was called";
+    cout << "Razor Leaf Function was called.";
   }
 
-  string Rock_Slide(POKEMON Attacker, POKEMON Defender)
+  void Rock_Slide(POKEMON Attacker, POKEMON Defender)
   {
-    return "Rock Slide Function was called";
+    cout << "Rock Slide Function was called.";
   }
 
-  string Rock_Throw(POKEMON Attacker, POKEMON Defender)
+  void Rock_Throw(POKEMON Attacker, POKEMON Defender)
   {
-    return "Rock Throw Function was called";
+    cout << "Rock Throw Function was called.";
   }
 
-  string Rolling_Kick(POKEMON Attacker, POKEMON Defender)
+  void Rolling_Kick(POKEMON Attacker, POKEMON Defender)
   {
-    return "Rolling Kick Function was called";
+    cout << "Rolling Kick Function was called.";
   }
 
-  string Scratch(POKEMON Attacker, POKEMON Defender)
+  void Scratch(POKEMON Attacker, POKEMON Defender)
   {
-    return "Scratch Function was called";
+    cout << "Scratch Function was called.";
   }
 
-  string Seismic_Toss(POKEMON Attacker, POKEMON Defender)
+  void Seismic_Toss(POKEMON Attacker, POKEMON Defender)
   {
-    return "Seismic Toss Function was called";
+    cout << "Seismic Toss Function was called.";
   }
 
-  string Self_Destruct(POKEMON Attacker, POKEMON Defender)
+  void Self_Destruct(POKEMON Attacker, POKEMON Defender)
   {
-    return "Self-Destruct Function was called";
+    cout << "Self_Destruct Function was called.";
   }
 
-  string Skull_Bash(POKEMON Attacker, POKEMON Defender)
+  void Skull_Bash(POKEMON Attacker, POKEMON Defender)
   {
-    return "Skull Bash Function was called";
+    cout << "Skull Bash Function was called.";
   }
 
-  string Sky_Attack(POKEMON Attacker, POKEMON Defender)
+  void Sky_Attack(POKEMON Attacker, POKEMON Defender)
   {
-    return "Sky Attack Function was called";
+    cout << "Sky Attack Function was called.";
   }
 
-  string Slam(POKEMON Attacker, POKEMON Defender)
+  void Slam(POKEMON Attacker, POKEMON Defender)
   {
-    return "Slam Function was called";
+    cout << "Slam Function was called.";
   }
 
-  string Slash(POKEMON Attacker, POKEMON Defender)
+  void Slash(POKEMON Attacker, POKEMON Defender)
   {
-    return "Slash Function was called";
+    cout << "Slash Function was called.";
   }
 
-  string Spike_Cannon(POKEMON Attacker, POKEMON Defender)
+  void Spike_Cannon(POKEMON Attacker, POKEMON Defender)
   {
-    return "Spike Cannon Function was called";
+    cout << "Spike Cannon Function was called.";
   }
 
-  string Stomp(POKEMON Attacker, POKEMON Defender)
+  void Stomp(POKEMON Attacker, POKEMON Defender)
   {
-    return "Stomp Function was called";
+    cout << "Stomp Function was called.";
   }
 
-  string Strength(POKEMON Attacker, POKEMON Defender)
+  void Strength(POKEMON Attacker, POKEMON Defender)
   {
-    return "Strength Function was called";
+    cout << "Strength Function was called.";
   }
 
-  string Struggle(POKEMON Attacker, POKEMON Defender)
+  void Struggle(POKEMON Attacker, POKEMON Defender)
   {
-    return "Struggle Function was called";
+    cout << "Struggle Function was called.";
   }
 
-  string Submission(POKEMON Attacker, POKEMON Defender)
+  void Submission(POKEMON Attacker, POKEMON Defender)
   {
-    return "Submission Function was called";
+    cout << "Submission Function was called.";
   }
 
-  string Super_Fang(POKEMON Attacker, POKEMON Defender)
+  void Super_Fang(POKEMON Attacker, POKEMON Defender)
   {
-    return "Super Fang Function was called";
+    cout << "Super Fang Function was called.";
   }
 
-  string Tackle(POKEMON Attacker, POKEMON Defender)
+  void Tackle(POKEMON Attacker, POKEMON Defender)
   {
-    return "Tackle Function was called";
+    cout << "Tackle Function was called.";
   }
 
-  string Take_Down(POKEMON Attacker, POKEMON Defender)
+  void Take_Down(POKEMON Attacker, POKEMON Defender)
   {
-    return "Take Down Function was called";
+    cout << "Take Down Function was called.";
   }
 
-  string Thrash(POKEMON Attacker, POKEMON Defender)
+  void Thrash(POKEMON Attacker, POKEMON Defender)
   {
-    return "Thrash Function was called";
+    cout << "Thrash Function was called.";
   }
 
-  string Thunder_Punch(POKEMON Attacker, POKEMON Defender)
+  void Thunder_Punch(POKEMON Attacker, POKEMON Defender)
   {
-    return "Thunder Punch Function was called";
+    cout << "Thunder Punch Function was called.";
   }
 
-  string Twineedle(POKEMON Attacker, POKEMON Defender)
+  void Twineedle(POKEMON Attacker, POKEMON Defender)
   {
-    return "Twineedle Function was called";
+    cout << "Twineedle Function was called.";
   }
 
-  string Vine_Whip(POKEMON Attacker, POKEMON Defender)
+  void Vine_Whip(POKEMON Attacker, POKEMON Defender)
   {
-    return "Vine Whip Function was called";
+    cout << "Vine Whip Function was called.";
   }
 
-  string Vise_Grip(POKEMON Attacker, POKEMON Defender)
+  void Vise_Grip(POKEMON Attacker, POKEMON Defender)
   {
-    return "Vise Grip Function was called";
+    cout << "Vise Grip Function was called.";
   }
 
-  string Waterfall(POKEMON Attacker, POKEMON Defender)
+  void Waterfall(POKEMON Attacker, POKEMON Defender)
   {
-    return "Waterfall Function was called";
+    cout << "Waterfall Function was called.";
   }
 
-  string Wing_Attack(POKEMON Attacker, POKEMON Defender)
+  void Wing_Attack(POKEMON Attacker, POKEMON Defender)
   {
-    return "Wing Attack Function was called";
+    cout << "Wing Attack Function was called.";
   }
 
-  string Wrap(POKEMON Attacker, POKEMON Defender)
+  void Wrap(POKEMON Attacker, POKEMON Defender)
   {
-    return "Wrap Function was called";
+    cout << "Wrap Function was called.";
+  }
+
+//ATTACK Switch Function _______________________________________________________________
+
+void ATT_FUNCT_CALL(int Function, POKEMON Attacker, POKEMON Defender)
+{
+  switch(Function)
+  {
+    case ABSORB: Absorb(Attacker, Defender); break;
+    case ACID: Acid(Attacker, Defender); break;
+    case AURORA_BEAM: Aurora_Beam(Attacker, Defender); break;
+    case BLIZZARD: Blizzard(Attacker, Defender); break;
+    case BUBBLE: Bubble(Attacker, Defender); break;
+    case BUBBLE_BEAM: Bubble_Beam(Attacker, Defender); break;
+    case CONFUSION: Confusion(Attacker, Defender); break;
+    case DRAGON_RAGE: Dragon_Rage(Attacker, Defender); break;
+    case DREAM_EATER: Dream_Eater(Attacker, Defender); break;
+    case EMBER: Ember(Attacker, Defender); break;
+    case FIRE_BLAST: Fire_Blast(Attacker, Defender); break;
+    case FIRE_SPIN: Fire_Spin(Attacker, Defender); break;
+    case FLAMETHROWER: Flamethrower(Attacker, Defender); break;
+    case GUST: Gust(Attacker, Defender); break;
+    case HYDRO_PUMP: Hydro_Pump(Attacker, Defender); break;
+    case HYPER_BEAM: Hyper_Beam(Attacker, Defender); break;
+    case ICE_BEAM: Ice_Beam(Attacker, Defender); break;
+    case MEGA_DRAIN: Mega_Drain(Attacker, Defender); break;
+    case NIGHT_SHADE: Night_Shade(Attacker, Defender); break;
+    case PETAL_DANCE: Petal_Dance(Attacker, Defender); break;
+    case PSYBEAM: Psybeam(Attacker, Defender); break;
+    case PSYCHIC: Psychic(Attacker, Defender); break;
+    case PSYWAVE: Psywave(Attacker, Defender); break;
+    case RAZOR_WIND: Razor_Wind(Attacker, Defender); break;
+    case SLUDGE: Sludge(Attacker, Defender); break;
+    case SMOG: Smog(Attacker, Defender); break;
+    case SOLAR_BEAM: Solar_Beam(Attacker, Defender); break;
+    case SONIC_BOOM: Sonic_Boom(Attacker, Defender); break;
+    case SURF: Surf(Attacker, Defender); break;
+    case SWIFT: Swift(Attacker, Defender); break;
+    case THUNDER: Thunder(Attacker, Defender); break;
+    case THUNDER_SHOCK: Thunder_Shock(Attacker, Defender); break;
+    case THUNDERBOLT: Thunderbolt(Attacker, Defender); break;
+    case TRI_ATTACK: Tri_Attack(Attacker, Defender); break;
+    case WATER_GUN: Water_Gun(Attacker, Defender); break;
+
+    case BARRAGE: Barrage(Attacker, Defender); break;
+    case BIDE: Bide(Attacker, Defender); break;
+    case BIND: Bind(Attacker, Defender); break;
+    case BITE: Bite(Attacker, Defender); break;
+    case BODY_SLAM: Body_Slam(Attacker, Defender); break;
+    case BONE_CLUB: Bone_Club(Attacker, Defender); break;
+    case BONEMERANG: Bonemerang(Attacker, Defender); break;
+    case CLAMP: Clamp(Attacker, Defender); break;
+    case COMET_PUNCH: Comet_Punch(Attacker, Defender); break;
+    case CONSTRICT: Constrict(Attacker, Defender); break;
+    case COUNTER: Counter(Attacker, Defender); break;
+    case CRABHAMMER: Crabhammer(Attacker, Defender); break;
+    case CUT: Cut(Attacker, Defender); break;
+    case DIG: Dig(Attacker, Defender); break;
+    case DIZZY_PUNCH: Dizzy_Punch(Attacker, Defender); break;
+    case DOUBLE_KICK: Double_Kick(Attacker, Defender); break;
+    case DOUBLE_SLAP: Double_Slap(Attacker, Defender); break;
+    case DOUBLE_EDGE: Double_Edge(Attacker, Defender); break;
+    case DRILL_PECK: Drill_Peck(Attacker, Defender); break;
+    case EARTHQUAKE: Earthquake(Attacker, Defender); break;
+    case EGG_BOMB: Egg_Bomb(Attacker, Defender); break;
+    case EXPLOSION: Explosion(Attacker, Defender); break;
+    case FIRE_PUNCH: Fire_Punch(Attacker, Defender); break;
+    case FISSURE: Fissure(Attacker, Defender); break;
+    case FLY: Fly(Attacker, Defender); break;
+    case FURY_ATTACK: Fury_Attack(Attacker, Defender); break;
+    case FURY_SWIPES: Fury_Swipes(Attacker, Defender); break;
+    case GUILLOTINE: Guillotine(Attacker, Defender); break;
+    case HEADBUTT: Headbutt(Attacker, Defender); break;
+    case HIGH_JUMP_KICK: High_Jump_Kick(Attacker, Defender); break;
+    case HORN_ATTACK: Horn_Attack(Attacker, Defender); break;
+    case HORN_DRILL: Horn_Drill(Attacker, Defender); break;
+    case HYPER_FANG: Hyper_Fang(Attacker, Defender); break;
+    case ICE_PUNCH: Ice_Punch(Attacker, Defender); break;
+    case JUMP_KICK: Jump_Kick(Attacker, Defender); break;
+    case KARATE_CHOP: Karate_Chop(Attacker, Defender); break;
+    case LEECH_LIFE: Leech_Life(Attacker, Defender); break;
+    case LICK: Lick(Attacker, Defender); break;
+    case LOW_KICK: Low_Kick(Attacker, Defender); break;
+    case MEGA_KICK: Mega_Kick(Attacker, Defender); break;
+    case MEGA_PUNCH: Mega_Punch(Attacker, Defender); break;
+    case PAY_DAY: Pay_Day(Attacker, Defender); break;
+    case PECK: Peck(Attacker, Defender); break;
+    case PIN_MISSILE: Pin_Missile(Attacker, Defender); break;
+    case POISON_STING: Poison_Sting(Attacker, Defender); break;
+    case POUND: Pound(Attacker, Defender); break;
+    case QUICK_ATTACK: Quick_Attack(Attacker, Defender); break;
+    case RAGE: Rage(Attacker, Defender); break;
+    case RAZOR_LEAF: Razor_Leaf(Attacker, Defender); break;
+    case ROCK_SLIDE: Rock_Slide(Attacker, Defender); break;
+    case ROCK_THROW: Rock_Throw(Attacker, Defender); break;
+    case ROLLING_KICK: Rolling_Kick(Attacker, Defender); break;
+    case SCRATCH: Scratch(Attacker, Defender); break;
+    case SEISMIC_TOSS: Seismic_Toss(Attacker, Defender); break;
+    case SELF_DESTRUCT: Self_Destruct(Attacker, Defender); break;
+    case SKULL_BASH: Skull_Bash(Attacker, Defender); break;
+    case SKY_ATTACK: Sky_Attack(Attacker, Defender); break;
+    case SLAM: Slam(Attacker, Defender); break;
+    case SLASH: Slash(Attacker, Defender); break;
+    case SPIKE_CANNON: Spike_Cannon(Attacker, Defender); break;
+    case STOMP: Stomp(Attacker, Defender); break;
+    case STRENGTH: Strength(Attacker, Defender); break;
+    case STRUGGLE: Struggle(Attacker, Defender); break;
+    case SUBMISSION: Submission(Attacker, Defender); break;
+    case SUPER_FANG: Super_Fang(Attacker, Defender); break;
+    case TACKLE: Tackle(Attacker, Defender); break;
+    case TAKE_DOWN: Take_Down(Attacker, Defender); break;
+    case THRASH: Thrash(Attacker, Defender); break;
+    case THUNDER_PUNCH: Thunder_Punch(Attacker, Defender); break;
+    case TWINEEDLE: Twineedle(Attacker, Defender); break;
+    case VINE_WHIP: Vine_Whip(Attacker, Defender); break;
+    case VISE_GRIP: Vise_Grip(Attacker, Defender); break;
+    case WATERFALL: Waterfall(Attacker, Defender); break;
+    case WING_ATTACK: Wing_Attack(Attacker, Defender); break;
+    case WRAP: Wrap(Attacker, Defender); break;
+
+  }
   }
 }
 
