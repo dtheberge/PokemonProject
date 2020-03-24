@@ -2,12 +2,15 @@
 #define POKEMON_H
 
 #include <array>
+#include <set>
+
 #include "ATTACK.h"
 #include "ITEM.h"
 #include "ENUMS.h"
 
 using namespace ENUMS;
 using std::array;
+using std::set;
 
 class ITEM;
 
@@ -29,6 +32,7 @@ class POKEMON
     int SPD;
 
     array<ATTACK, 4> Move_Set;
+    set<string> Seen;
 
     //Private SETTERS
     void set_PokedexNumber(int Pokedex_Number);
@@ -41,6 +45,7 @@ class POKEMON
     void set_Type1();
     void set_Type2();
     void set_Attacks();
+    void set_Seen();
 
   public:
     //Constructor
@@ -65,6 +70,8 @@ class POKEMON
 
     int get_HPCurrent() const;
     CONDITION get_CurrentCondition() const;
+
+    void get_Seen() const;
 
     //Other
     int Random_Pokemon();  //Finds and returns a random POKEMON in POKEMON Class

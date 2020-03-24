@@ -1,6 +1,10 @@
 //POKEMON IMPLEMENTATION FILE
 
 #include "POKEMON.h"
+#include <iostream>
+
+using std::cout;
+using std::endl;
 
 //CONSTRUCTORS
 POKEMON::POKEMON()    //For Random Pokemon
@@ -18,6 +22,8 @@ POKEMON::POKEMON()    //For Random Pokemon
 
   set_HPCurrent(HP_Max);
   set_CurrentCondition(NO_CONDITION);
+
+  set_Seen();
 }
 
 POKEMON::POKEMON(int starter)    //For Random Pokemon
@@ -35,6 +41,8 @@ POKEMON::POKEMON(int starter)    //For Random Pokemon
 
   set_HPCurrent(HP_Max);
   set_CurrentCondition(NO_CONDITION);
+
+  set_Seen();
 }
 
 //PRIVATE SETTTERS
@@ -111,6 +119,11 @@ void POKEMON::set_Attacks()
   }
 }
 
+void POKEMON::set_Seen()
+{
+  Seen.insert(this->Name);
+}
+
 //PUBLIC SETTERS
 void POKEMON::set_HPCurrent(int health)
 {
@@ -181,6 +194,14 @@ int POKEMON::get_HPCurrent() const
 CONDITION POKEMON::get_CurrentCondition() const
 {
   return Current_Condition;
+}
+
+void POKEMON::get_Seen() const
+{
+  for(string Seen: Seen)
+  {
+    cout << Seen << endl;
+  }
 }
 
 //OTHER
