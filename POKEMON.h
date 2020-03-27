@@ -3,6 +3,8 @@
 
 #include <array>
 #include <set>
+#include <map>
+#include <cmath>
 
 #include "ATTACK.h"
 #include "ITEM.h"
@@ -10,7 +12,9 @@
 
 using namespace ENUMS;
 using std::array;
+using std::map;
 using std::set;
+using std::trunc;
 
 class ITEM;
 
@@ -32,7 +36,9 @@ class POKEMON
     int SPD;
 
     array<ATTACK, 4> Move_Set;
-    set<string> Seen;
+
+    //Maps for stat modification
+
 
     //Private SETTERS
     void set_PokedexNumber(int Pokedex_Number);
@@ -45,14 +51,26 @@ class POKEMON
     void set_Type1();
     void set_Type2();
     void set_Attacks();
+
     void set_Seen();
 
   public:
+
+    static set<string> Seen;
+
     //Constructor
     POKEMON();
     POKEMON(int starter);
 
     //Public SETTERS
+    // void set_HPMax(int Modification);
+    // void set_ATK(int Modification);
+    // void set_DEF(int Modification);
+    // void set_SPA(int Modification);
+    // void set_SPD(int Modification);
+
+
+
     void set_HPCurrent(int health);
     void set_CurrentCondition(CONDITION Current_Status);
 
@@ -71,7 +89,7 @@ class POKEMON
     int get_HPCurrent() const;
     CONDITION get_CurrentCondition() const;
 
-    void get_Seen() const;
+    static void get_Seen();
 
     //Other
     int Random_Pokemon();  //Finds and returns a random POKEMON in POKEMON Class

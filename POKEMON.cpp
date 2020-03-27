@@ -196,11 +196,11 @@ CONDITION POKEMON::get_CurrentCondition() const
   return Current_Condition;
 }
 
-void POKEMON::get_Seen() const
+void POKEMON::get_Seen()
 {
-  for(string Seen: Seen)
+  for(string pokemon: POKEMON::Seen)
   {
-    cout << Seen << endl;
+    cout << pokemon << endl;
   }
 }
 

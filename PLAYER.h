@@ -1,8 +1,12 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include <iostream>
+
 #include "PERSON.h"
 #include "ITEM.h"
+
+
 
 class PLAYER : public PERSON
 {
@@ -17,6 +21,7 @@ class PLAYER : public PERSON
     void remove_Pocket(int indexToRemove) override;   //Removes a specified POKEMON from Poket Vector
     void add_Backpack(ITEM Item);
     void remove_Backpack(int indexToRemove);
+
 };
 
 #endif
