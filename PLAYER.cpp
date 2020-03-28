@@ -7,7 +7,7 @@ PLAYER::PLAYER (string Name)
 {
   set_Name(Name);
   Money = 0;
-  //Vector is initially Empty
+  //Vector is initially empty
 }
 
 //SETTER and VECTOR DATA MEMEBER FUNCTIONS
@@ -21,27 +21,27 @@ void PLAYER::set_Money(int Transaction)
   this->Money += Transaction;
 }
 
-void PLAYER::add_Pocket(POKEMON Pokemon)  //There has to be a reason this definition is different than the other
+void PLAYER::add_Party(POKEMON Pokemon)  //There has to be a reason this definition is different than the other
 {
-  Pocket.push_back(Pokemon);
+  Party.push_back(Pokemon);
 }
 
 //If erasing a Pokemon,  Be sure to add it to where it needs to be first
-void PLAYER::remove_Pocket(int indexToRemove)
+void PLAYER::remove_Party(int indexToRemove)
 {
-    auto iter = Pocket.begin();
+    auto iter = Party.begin();
     iter += indexToRemove;
-    Pocket.erase(iter);
+    Party.erase(iter);
 }
 
-void PLAYER::add_Backpack(ITEM Item)
+void PLAYER::add_Bag(ITEM Item)
 {
-  Backpack.push_back(Item);
+  Bag.push_back(Item);
 }
 
-void PLAYER::remove_Backpack(int indexToRemove)
+void PLAYER::remove_Bag(int indexToRemove)
 {
-    auto iter = Backpack.begin();
+    auto iter = Bag.begin();
     iter += indexToRemove;
-    Backpack.erase(iter);
+    Bag.erase(iter);
 }

@@ -124,7 +124,35 @@ void POKEMON::set_Seen()
   Seen.insert(this->Name);
 }
 
+
 //PUBLIC SETTERS
+void POKEMON::set_HPMax(int Modification)
+{
+  
+  this->HP_Max += Modification;
+}
+
+void POKEMON::set_ATK(int Modification)
+{
+    this->ATK += Modification;
+}
+
+void POKEMON::set_DEF(int Modification)
+{
+    this->DEF += Modification;
+}
+
+void POKEMON::set_SPA(int Modification)
+{
+    this->SPA += Modification;
+}
+
+void POKEMON::set_SPD(int Modification)
+{
+    this->SPD += Modification;
+}
+
+
 void POKEMON::set_HPCurrent(int health)
 {
   this->HP_Current += health;
@@ -196,11 +224,11 @@ CONDITION POKEMON::get_CurrentCondition() const
   return Current_Condition;
 }
 
-void POKEMON::get_Seen() const
+void POKEMON::get_Seen()
 {
-  for(string Seen: Seen)
+  for(string pokemon: POKEMON::Seen)
   {
-    cout << Seen << endl;
+    cout << pokemon << endl;
   }
 }
 

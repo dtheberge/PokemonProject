@@ -16,7 +16,7 @@ int PERSON::get_Money() const
   return Money;
 }
 
-POKEMON PERSON::get_Pocket(int index) const
+POKEMON PERSON::get_Party(int index) const
 {
-  return Pocket[index];
+  return Party[index];
 }

@@ -13,7 +13,7 @@ NPC::NPC()
   int count = NPC_PokemonCount();
   for(int i = 0; i < count; i++)
   {
-    add_Pocket(POKEMON());
+    add_Party(POKEMON());
   }
 
   //Increment Object Count Every Instantiation
@@ -40,16 +40,16 @@ void NPC::set_Money(int Transaction)
   this->Money += random_Money;
 }
 
-void NPC::add_Pocket(POKEMON Pokemon)
+void NPC::add_Party(POKEMON Pokemon)
 { //Add only if there is 0 to 5 Pokemon
-  Pocket.push_back(Pokemon);
+  Party.push_back(Pokemon);
 }
 
-void NPC::remove_Pocket(int indexToRemove)
+void NPC::remove_Party(int indexToRemove)
 { //Remove if the Pokemon Current HP has reached 0
-  auto iter = Pocket.begin();
+  auto iter = Party.begin();
   iter += indexToRemove;
-  Pocket.erase(iter);
+  Party.erase(iter);
 }
 
 //HELPER FUNCTIONS
