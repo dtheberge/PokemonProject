@@ -13,10 +13,10 @@ class NPC : public PERSON
     void remove_Party(int indexToRemove) override;  //Removes a Pokemon from NPC's Party (Will remove when HP=0)
 
     //Helper Functions for the constructor
-    int NPC_PokemonCount();           //Determines the number of POKEMON the NPC needs
+    int NPC_PokemonCount();    //Determines the number of POKEMON the NPC needs
 
   public:
-    NPC();                  //Constructor ~ Will increment NPC_Count
+    NPC();                    //Increment NPC_Count
     static int NPC_Count;
 };
 

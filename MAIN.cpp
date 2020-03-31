@@ -4,9 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <chrono>
-#include <thread>
-#include <unistd.h>
+#include <unistd.h>         //For sleep()
 
 #include "ATTACK.h"
 #include "ITEM.h"
@@ -24,27 +22,11 @@ using namespace ATT_FUNCTS;
 
 //Initializing Static Members
 int NPC::NPC_Count = 0;
-set<string> POKEMON::Seen = {};
-
-class PokeText {
-  public:
-    PokeText() = default;
-    PokeText& operator<<(const string& text)
-    {
-      for (size_t i = 0; i < text.size(); ++i)
-      {
-        cout << text[i] << flush;
-        this_thread::sleep_for(chrono::milliseconds(40));
-      }
-
-      cout << endl;
-      return *this;
-    }
-};
+map<int, string> POKEMON::Seen = {};
 
 int main()
 {
-  PokeText pikapika;
+  INTERACTION pika;
 
   PLAYER USER("Glockinator");
   NPC Trainer;
@@ -77,10 +59,22 @@ int main()
   ATT_FUNCT_CALL(FunctionDesired, pokemon1, pokemon1);
 
   cout << endl << endl;
-  POKEMON::get_Seen();
 
   //cout << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus";
-  pikapika << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus." << "What's up dawg";
+  pika << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus." << "What's up dawg";
+
+  int PikachuAttack = pokemon1.get_ATK();
+  cout << "Pikachu's OB_ATK Stat: " <<  PikachuAttack << endl;
+
+  pokemon1.set_BattleStat("ATK", pokemon1.get_ATK());
+
+  cout << "Pikachu's Battle Attack Stat: " <<  pokemon1.get_BattleStat("ATK") << endl;
+
+  pokemon1.set_BattleStat("ATK", -5);
+  cout << "Pikachu's Battle Attack Stat: " <<  pokemon1.get_BattleStat("ATK") << endl;
+
+  cout << endl << endl << endl;
+  POKEMON::get_Seen();
 
   return 0;
 

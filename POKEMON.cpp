@@ -2,9 +2,12 @@
 
 #include "POKEMON.h"
 #include <iostream>
+#include <iomanip>
 
 using std::cout;
 using std::endl;
+using std::setw;
+using std::right;
 
 //CONSTRUCTORS
 POKEMON::POKEMON()    //For Random Pokemon
@@ -12,18 +15,23 @@ POKEMON::POKEMON()    //For Random Pokemon
   set_PokedexNumber(Random_Pokemon());
 
   set_Name();
+  set_Type1();
+  set_Type2();
   set_HPMax();
   set_ATK();
   set_DEF();
   set_SPA();
   set_SPD();
-  set_Type1();
-  set_Type2();
 
-  set_HPCurrent(HP_Max);
+  set_Moves();
   set_CurrentCondition(NO_CONDITION);
 
-  set_Seen();
+  Battle_Stats.insert(pair<string, int>("ATK",0));
+  Battle_Stats.insert(pair<string, int>("DEF",0));
+  Battle_Stats.insert(pair<string, int>("SPA",0));
+  Battle_Stats.insert(pair<string, int>("SPD",0));
+
+  Seen.insert(pair<int, string>(this->Pokedex_Number, this->Name));
 }
 
 POKEMON::POKEMON(int starter)    //For Random Pokemon
@@ -39,13 +47,18 @@ POKEMON::POKEMON(int starter)    //For Random Pokemon
   set_Type1();
   set_Type2();
 
-  set_HPCurrent(HP_Max);
+  set_Moves();
   set_CurrentCondition(NO_CONDITION);
 
-  set_Seen();
+  Battle_Stats.insert(pair<string, int>("ATK",0));
+  Battle_Stats.insert(pair<string, int>("DEF",0));
+  Battle_Stats.insert(pair<string, int>("SPA",0));
+  Battle_Stats.insert(pair<string, int>("SPD",0));
+
+  Seen.insert(pair<int, string>(this->Pokedex_Number, this->Name));
 }
 
-//PRIVATE SETTTERS
+//PRIVATE SETTTERS -------------------------------------------------------------
 void POKEMON::set_PokedexNumber(int Pokedex_Number)
 {
   //Retrieve from File based on random Pokedex Number
@@ -59,11 +72,26 @@ void POKEMON::set_Name()
   this->Name = Name;
 }
 
+void POKEMON::set_Type1()
+{
+  //Retrieve from File based on the instance's Pokedex Number
+  TYPE Type1 = GRASS;
+  this->Type1 = Type1;
+}
+
+void POKEMON::set_Type2()
+{
+  //Retrieve from File based on the instance's Pokedex Number
+  TYPE Type2 = WATER;
+  this->Type2 = Type2;
+}
+
 void POKEMON::set_HPMax()
 {
   //Retrieve from File based on the instance's Pokedex Number
   int HP_Max = 111;
   this->HP_Max = HP_Max;
+  this->HP_Current = HP_Max;
 }
 
 void POKEMON::set_ATK()
@@ -94,22 +122,7 @@ void POKEMON::set_SPD()
   this->SPD = SPD;
 }
 
-void POKEMON::set_Type1()
-{
-  //Retrieve from File based on the instance's Pokedex Number
-  TYPE Type1 = GRASS;
-  this->Type1 = Type1;
-}
-
-void POKEMON::set_Type2()
-{
-  //Retrieve from File based on the instance's Pokedex Number
-  TYPE Type2 = WATER;
-  this->Type2 = Type2;
-}
-
-
-void POKEMON::set_Attacks()
+void POKEMON::set_Moves()
 {
   //Make random Attacks
   for(int i = 0; i < 4; i++)
@@ -119,43 +132,25 @@ void POKEMON::set_Attacks()
   }
 }
 
-void POKEMON::set_Seen()
+//PUBLIC SETTERS ---------------------------------------------------------------
+void POKEMON::set_HPCurrent(int Modification)
 {
-  Seen.insert(this->Name);
+  //Retrieve from File based on the instance's Pokedex Number
+  this->HP_Current += Modification;
 }
 
-
-//PUBLIC SETTERS
 void POKEMON::set_HPMax(int Modification)
 {
-  
   this->HP_Max += Modification;
 }
 
-void POKEMON::set_ATK(int Modification)
+void POKEMON::set_BattleStat(string Stat, int Modification)
 {
-    this->ATK += Modification;
-}
-
-void POKEMON::set_DEF(int Modification)
-{
-    this->DEF += Modification;
-}
-
-void POKEMON::set_SPA(int Modification)
-{
-    this->SPA += Modification;
-}
-
-void POKEMON::set_SPD(int Modification)
-{
-    this->SPD += Modification;
-}
-
-
-void POKEMON::set_HPCurrent(int health)
-{
-  this->HP_Current += health;
+  auto iter = this->Battle_Stats.find(Stat);
+  if (iter != this->Battle_Stats.end())
+    iter->second += Modification;
+  else
+    cout << Stat << " STAT NOT FOUND" << endl;
 }
 
 void POKEMON::set_CurrentCondition(CONDITION Current_Condition)
@@ -163,15 +158,25 @@ void POKEMON::set_CurrentCondition(CONDITION Current_Condition)
   this->Current_Condition = Current_Condition;
 }
 
-//GETTERS
+//GETTERS-----------------------------------------------------------------------
+int POKEMON::get_PokedexNumber() const
+{
+  return Pokedex_Number;
+}
+
 string POKEMON::get_Name() const
 {
   return Name;
 }
 
-int POKEMON::get_PokedexNumber() const
+TYPE POKEMON::get_Type1() const
 {
-  return Pokedex_Number;
+  return Type1;
+}
+
+TYPE POKEMON::get_Type2() const
+{
+  return Type2;
 }
 
 int POKEMON::get_HPMax() const
@@ -199,24 +204,19 @@ int POKEMON::get_SPD() const
   return SPD;
 }
 
-TYPE POKEMON::get_Type1() const
-{
-  return Type1;
-}
-
-TYPE POKEMON::get_Type2() const
-{
-  return Type2;
-}
-
-ATTACK POKEMON::get_Attack(int MoveIndex) const
+ATTACK POKEMON::get_Move(int MoveIndex) const
 {
   return Move_Set[MoveIndex];
 }
 
-int POKEMON::get_HPCurrent() const
+//In Battle Information
+int POKEMON::get_BattleStat(string Stat) const
 {
-  return HP_Current;
+  auto iter = this->Battle_Stats.find(Stat);
+  if (iter != this->Battle_Stats.end())
+    return iter->second;
+  else
+    cout << Stat << " STAT NOT FOUND" << endl;
 }
 
 CONDITION POKEMON::get_CurrentCondition() const
@@ -224,17 +224,27 @@ CONDITION POKEMON::get_CurrentCondition() const
   return Current_Condition;
 }
 
+
+//Other
 void POKEMON::get_Seen()
 {
-  for(string pokemon: POKEMON::Seen)
+  for(int i = 1; i <= 25; i++)
   {
-    cout << pokemon << endl;
+    for(int j = i; j <= 152; j += 25)
+    {
+      auto iter = Seen.find(j);
+      if (iter != Seen.end())
+        cout << right << setw(5) << iter->first << setw(15) << iter->second;
+      else
+        cout << right << setw(5) << j << setw(15) << "?????";
+    }
+    cout << endl;
   }
 }
 
 //OTHER
 int POKEMON::Random_Pokemon()
 {
-  int random_integer = 23;            //This is going to be random
+  int random_integer = 25;            //This is going to be random
   return random_integer;
 }
