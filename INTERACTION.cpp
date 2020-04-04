@@ -9,6 +9,5 @@ INTERACTION& INTERACTION::operator<<(const string& text)
     this_thread::sleep_for(chrono::milliseconds(40));
   }
 
-  cout << endl;
   return *this;
 }

@@ -35,7 +35,7 @@ void NPC::set_Name(string Name)
 void NPC::set_Money(int Transaction)
 {
   //Generate a Pseudorandom Number to add to the Money
-  int random_Money = 69;
+  int random_Money = 55;
 
   this->Money += random_Money;
 }

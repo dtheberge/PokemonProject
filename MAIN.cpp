@@ -1,6 +1,6 @@
 // Pokemon Project
 //Authors: Derryk Theberge and Luke McLaughlin
-
+ 
 #include <iostream>
 #include <string>
 #include <vector>
@@ -31,52 +31,53 @@ int main()
   PLAYER USER("Glockinator");
   NPC Trainer;
 
-  cout << "User Name: " << USER.get_Name() << endl;
-  cout << "User Money: " << USER.get_Money() << endl;
+  pika << "User Name: " << USER.get_Name() << "\n";
+  pika << "User Money: " << to_string(USER.get_Money()) << "\n";
 
   sleep(1);
   USER.set_Money(33);
-  cout << "User Money after Transaction: " << USER.get_Money() << endl << endl;
+
+  pika << "User Money after Transaction: " << to_string(USER.get_Money()) << "\n\n";
 
   sleep(1);
-  cout << "Trainer Name: " << Trainer.get_Name() << endl;
-  cout << "Trainer Money: " << Trainer.get_Money() << endl << endl;
+  pika << "Trainer Name: " << Trainer.get_Name() << "\n";
+  pika << "Trainer Money: " << to_string(Trainer.get_Money()) << "\n\n";
 
   POKEMON pokemon1;
+  pika << Condition_string(pokemon1.get_CurrentCondition());
+
   USER.add_Party(pokemon1);
 
   sleep(1);
   POKEMON temp = USER.get_Party(0);
-  cout << "First Pokemon: " << temp.get_Name() << endl;
-  cout << "Pokemon's Pokedex Number: " << temp.get_PokedexNumber() << endl;
-  cout << "NPC Count: " << NPC::NPC_Count << endl << endl;
+  pika << "\n" << "First Pokemon: " << temp.get_Name() << "\n";
+  pika << "Pokemon's Pokedex Number: " << to_string(temp.get_PokedexNumber()) << "\n";
+  pika << "NPC Count: " << to_string(NPC::NPC_Count) << "\n\n";
 
   int FunctionDesired;
 
-  cout << "Enter the functions name wanted (Any of the Attacks (No error check)): ";
+  pika << "Enter the functions name wanted (Any of the Attacks (No error check)): ";
   cin >> FunctionDesired;
 
   ATT_FUNCT_CALL(FunctionDesired, pokemon1, pokemon1);
 
-  cout << endl << endl;
+  pika << "\n\n";
 
-  //cout << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus";
-  pika << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus." << "What's up dawg";
+  //pika << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus";
+  pika << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus." << "\n" << "What's up dawg" << "\n";
 
   int PikachuAttack = pokemon1.get_ATK();
-  cout << "Pikachu's OB_ATK Stat: " <<  PikachuAttack << endl;
+  pika << "Pikachu's OB_ATK Stat: " <<  to_string(PikachuAttack) << "\n";
 
   pokemon1.set_BattleStat("ATK", pokemon1.get_ATK());
 
-  cout << "Pikachu's Battle Attack Stat: " <<  pokemon1.get_BattleStat("ATK") << endl;
+  pika << "Pikachu's Battle Attack Stat: " <<  to_string(pokemon1.get_BattleStat("ATK")) << "\n";
 
   pokemon1.set_BattleStat("ATK", -5);
-  cout << "Pikachu's Battle Attack Stat: " <<  pokemon1.get_BattleStat("ATK") << endl;
+  pika << "Pikachu's Battle Attack Stat: " <<  to_string(pokemon1.get_BattleStat("ATK")) << "\n";
 
-  cout << endl << endl << endl;
+  pika << "\n\n" << "\n";
   POKEMON::get_Seen();
 
   return 0;
-
-
 }

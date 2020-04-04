@@ -1,0 +1,166 @@
+NUMBER	NAME	TYPE	CATEGORY	DMG	ACC	PP	DESCRIPTION
+0	Barrage	NORMAL	PHYSICAL	15	85	20	Hits 2-5 times in one turn.
+1	Bide	NORMAL	PHYSICAL	-1	-1	10	User takes damage for two turns then strikes back double.
+2	Bind	NORMAL	PHYSICAL	15	85	20	Traps opponent, damaging them for 4-5 turns.
+3	Bite	DARK	PHYSICAL	60	100	25	May cause flinching.
+4	Body Slam	NORMAL	PHYSICAL	85	100	15	May paralyze opponent.
+5	Bone Club	GROUND	PHYSICAL	65	85	20	May cause flinching.
+6	Bonemerang	GROUND	PHYSICAL	50	90	10	Hits twice in one turn.
+7	Clamp	WATER	PHYSICAL	35	85	10	Traps opponent, damaging them for 4-5 turns.
+8	Comet Punch	NORMAL	PHYSICAL	18	85	15	Hits 2-5 times in one turn.
+9	Constrict	NORMAL	PHYSICAL	10	100	35	May lower opponent's Speed by one stage.
+10	Counter	FIGHTING	PHYSICAL	-1	100	20	When hit by a Physical Attack, user strikes back with 2x power.
+11	Crabhammer	WATER	PHYSICAL	100	90	10	High critical hit ratio.
+12	Cut	NORMAL	PHYSICAL	50	95	30	Attacks the opponent.
+13	Dig	GROUND	PHYSICAL	80	100	10	Digs underground on first turn, attacks on second. Can also escape from caves.
+14	Dizzy Punch	NORMAL	PHYSICAL	70	100	10	May confuse opponent.
+15	Double Kick	FIGHTING	PHYSICAL	30	100	30	Hits twice in one turn.
+16	Double Slap	NORMAL	PHYSICAL	15	85	10	Hits 2-5 times in one turn.
+17	Double-Edge	NORMAL	PHYSICAL	120	100	15	User receives recoil damage.
+18	Drill Peck	FLYING	PHYSICAL	80	100	20	Attacks the opponent.
+19	Earthquake	GROUND	PHYSICAL	100	100	10	Power is doubled if opponent is underground from using Dig.
+20	Egg Bomb	NORMAL	PHYSICAL	100	75	10	Attacks the opponent.
+21	Explosion	NORMAL	PHYSICAL	250	100	5	User faints.
+22	Fire Punch	FIRE	PHYSICAL	75	100	15	May burn opponent.
+23	Fissure	GROUND	PHYSICAL	-1	-1	5	One-Hit-KO, if it hits.
+24	Fly	FLYING	PHYSICAL	90	95	15	Flies up on first turn, attacks on second turn.
+25	Fury Attack	NORMAL	PHYSICAL	15	85	20	Hits 2-5 times in one turn.
+26	Fury Swipes	NORMAL	PHYSICAL	18	80	15	Hits 2-5 times in one turn.
+27	Guillotine	NORMAL	PHYSICAL	-1	-1	5	One-Hit-KO, if it hits.
+28	Headbutt	NORMAL	PHYSICAL	70	100	15	May cause flinching.
+29	High Jump Kick	FIGHTING	PHYSICAL	130	90	10	If it misses, the user loses half their HP.
+30	Horn Attack	NORMAL	PHYSICAL	65	100	25	Attacks the opponent.
+31	Horn Drill	NORMAL	PHYSICAL	-1	-1	5	One-Hit-KO, if it hits.
+32	Hyper Fang	NORMAL	PHYSICAL	80	90	15	May cause flinching.
+33	Ice Punch	ICE	PHYSICAL	75	100	15	May freeze opponent.
+34	Jump Kick	FIGHTING	PHYSICAL	100	95	10	If it misses, the user loses half their HP.
+35	Karate Chop	FIGHTING	PHYSICAL	50	100	25	High critical hit ratio.
+36	Leech Life	BUG	PHYSICAL	80	100	10	User recovers half the HP inflicted on opponent.
+37	Lick	GHOST	PHYSICAL	30	100	30	May paralyze opponent.
+38	Low Kick	FIGHTING	PHYSICAL	-1	100	20	The heavier the opponent, the stronger the attack.
+39	Mega Kick	NORMAL	PHYSICAL	120	75	5	Attacks the opponent.
+40	Mega Punch	NORMAL	PHYSICAL	80	85	20	Attacks the opponent.
+41	Pay Day	NORMAL	PHYSICAL	40	100	20	A small amount of money is gained after the battle resolves.
+42	Peck	FLYING	PHYSICAL	35	100	35	Attacks the opponent.
+43	Pin Missile	BUG	PHYSICAL	25	95	20	Hits 2-5 times in one turn.
+44	Poison Sting	POISON	PHYSICAL	15	100	35	May poison the opponent.
+45	Pound	NORMAL	PHYSICAL	40	100	35	Attacks the opponent.
+46	Quick Attack	NORMAL	PHYSICAL	40	100	30	User attacks first.
+47	Rage	NORMAL	PHYSICAL	20	100	20	Raises user's Attack when hit.
+48	Razor Leaf	GRASS	PHYSICAL	55	95	25	High critical hit ratio.
+49	Rock Slide	ROCK	PHYSICAL	75	90	10	May cause flinching.
+50	Rock Throw	ROCK	PHYSICAL	50	90	15	Attacks the opponent.
+51	Rolling Kick	FIGHTING	PHYSICAL	60	85	15	May cause flinching.
+52	Scratch	NORMAL	PHYSICAL	40	100	35	Attacks the opponent.
+53	Seismic Toss	FIGHTING	PHYSICAL	-1	100	20	Inflicts damage equal to user's level.
+54	Self-Destruct	NORMAL	PHYSICAL	200	100	5	User faints.
+55	Skull Bash	NORMAL	PHYSICAL	130	100	10	Raises Defense on first turn, attacks on second.
+56	Sky Attack	FLYING	PHYSICAL	140	90	5	Charges on first turn, attacks on second. May cause flinching.
+57	Slam	NORMAL	PHYSICAL	80	75	20	Attacks the opponent.
+58	Slash	NORMAL	PHYSICAL	70	100	20	High critical hit ratio.
+59	Spike Cannon	NORMAL	PHYSICAL	20	100	15	Hits 2-5 times in one turn.
+60	Stomp	NORMAL	PHYSICAL	65	100	20	May cause flinching.
+61	Strength	NORMAL	PHYSICAL	80	100	15	Attacks the opponent.
+62	Struggle	NORMAL	PHYSICAL	50	100	-1	Only usable when all PP are gone. Hurts the user.
+63	Submission	FIGHTING	PHYSICAL	80	80	20	User receives recoil damage.
+64	Super Fang	NORMAL	PHYSICAL	-1	90	10	Always takes off half of the opponent's HP.
+65	Tackle	NORMAL	PHYSICAL	40	100	35	Attacks the opponent.
+66	Take Down	NORMAL	PHYSICAL	90	85	20	User receives recoil damage.
+67	Thrash	NORMAL	PHYSICAL	120	100	10	User attacks for 2-3 turns but then becomes confused.
+68	Thunder Punch	ELECTRIC	PHYSICAL	75	100	15	May paralyze opponent.
+69	Twineedle	BUG	PHYSICAL	25	100	20	Hits twice in one turn. May poison opponent.
+70	Vine Whip	GRASS	PHYSICAL	45	100	25	Attacks the opponent.
+71	Vise Grip	NORMAL	PHYSICAL	55	100	30	Attacks the opponent.
+72	Waterfall	WATER	PHYSICAL	80	100	15	May cause flinching.
+73	Wing Attack	FLYING	PHYSICAL	60	100	35	Attacks the opponent.
+74	Wrap	NORMAL	PHYSICAL	15	90	20	Traps opponent, damaging them for 4-5 turns.
+75	Absorb	GRASS	SPECIAL	20	100	25	User recovers half the HP inflicted on opponent.
+76	Acid	POISON	SPECIAL	40	100	30	May lower opponent's Special Defense.
+77	Aurora Beam	ICE	SPECIAL	65	100	20	May lower opponent's Attack.
+78	Blizzard	ICE	SPECIAL	110	70	5	May freeze opponent.
+79	Bubble	WATER	SPECIAL	40	100	30	May lower opponent's Speed.
+80	Bubble Beam	WATER	SPECIAL	65	100	20	May lower opponent's Speed.
+81	Confusion	PSYCHIC	SPECIAL	50	100	25	May confuse opponent.
+82	Dragon Rage	DRAGON	SPECIAL	-1	100	10	Always inflicts 40 HP.
+83	Dream Eater	PSYCHIC	SPECIAL	100	100	15	User recovers half the HP inflicted on a sleeping opponent.
+84	Ember	FIRE	SPECIAL	40	100	25	May burn opponent.
+85	Fire Blast	FIRE	SPECIAL	110	85	5	May burn opponent.
+86	Fire Spin	FIRE	SPECIAL	35	85	15	Traps opponent, damaging them for 4-5 turns.
+87	Flamethrower	FIRE	SPECIAL	90	100	15	May burn opponent.
+88	Gust	FLYING	SPECIAL	40	100	35	Hits Pok�mon using Fly/Bounce with double power.
+89	Hydro Pump	WATER	SPECIAL	110	80	5	Attacks the opponent.
+90	Hyper Beam	NORMAL	SPECIAL	150	90	5	User must recharge next turn.
+91	Ice Beam	ICE	SPECIAL	90	100	10	May freeze opponent.
+92	Mega Drain	GRASS	SPECIAL	40	100	15	User recovers half the HP inflicted on opponent.
+93	Night Shade	GHOST	SPECIAL	-1	100	15	Inflicts damage equal to user's level.
+94	Petal Dance	GRASS	SPECIAL	120	100	10	User attacks for 2-3 turns but then becomes confused.
+95	Psybeam	PSYCHIC	SPECIAL	65	100	20	May confuse opponent.
+96	Psychic	PSYCHIC	SPECIAL	90	100	10	May lower opponent's Special Defense.
+97	Psywave	PSYCHIC	SPECIAL	-1	80	15	Inflicts damage 50-150% of user's level.
+98	Razor Wind	NORMAL	SPECIAL	80	100	10	Charges on first turn, attacks on second. High critical hit ratio.
+99	Sludge	POISON	SPECIAL	65	100	20	May poison opponent.
+100	Smog	POISON	SPECIAL	30	70	20	May poison opponent.
+101	Solar Beam	GRASS	SPECIAL	120	100	10	Charges on first turn, attacks on second.
+102	Sonic Boom	NORMAL	SPECIAL	-1	90	20	Always inflicts 20 HP.
+103	Surf	WATER	SPECIAL	90	100	15	Hits all adjacent Pok�mon.
+104	Swift	NORMAL	SPECIAL	60	?	20	Ignores Accuracy and Evasiveness.
+105	Thunder	ELECTRIC	SPECIAL	110	70	10	May paralyze opponent.
+106	Thunder Shock	ELECTRIC	SPECIAL	40	100	30	May paralyze opponent.
+107	Thunderbolt	ELECTRIC	SPECIAL	90	100	15	May paralyze opponent.
+108	Tri Attack	NORMAL	SPECIAL	80	100	10	May paralyze, burn or freeze opponent.
+109	Water Gun	WATER	SPECIAL	40	100	25	Attacks the opponent.
+110	Acid Armor	POISON	STATUS	-1	-1	20	Sharply raises user's Defense.
+111	Agility	PSYCHIC	STATUS	-1	-1	30	Sharply raises user's Speed.
+112	Amnesia	PSYCHIC	STATUS	-1	-1	20	Sharply raises user's Special Defense.
+113	Barrier	PSYCHIC	STATUS	-1	-1	20	Sharply raises user's Defense.
+114	Confuse Ray	GHOST	STATUS	-1	100	10	Confuses opponent.
+115	Conversion	NORMAL	STATUS	-1	-1	30	Changes user's type to that of its first move.
+116	Defense Curl	NORMAL	STATUS	-1	-1	40	Raises user's Defense.
+117	Disable	NORMAL	STATUS	-1	100	20	Opponent can't use its last attack for a few turns.
+118	Double Team	NORMAL	STATUS	-1	-1	15	Raises user's Evasiveness.
+119	Flash	NORMAL	STATUS	-1	100	20	Lowers opponent's Accuracy.
+120	Focus Energy	NORMAL	STATUS	-1	-1	30	Increases critical hit ratio.
+121	Glare	NORMAL	STATUS	-1	100	30	Paralyzes opponent.
+122	Growl	NORMAL	STATUS	-1	100	40	Lowers opponent's Attack.
+123	Growth	NORMAL	STATUS	-1	-1	40	Raises user's Attack and Special Attack.
+124	Harden	NORMAL	STATUS	-1	-1	30	Raises user's Defense.
+125	Haze	ICE	STATUS	-1	-1	30	Resets all stat changes.
+126	Hypnosis	PSYCHIC	STATUS	-1	60	20	Puts opponent to sleep.
+127	Kinesis	PSYCHIC	STATUS	-1	80	15	Lowers opponent's Accuracy.
+128	Leech Seed	GRASS	STATUS	-1	90	10	Drains HP from opponent each turn.
+129	Leer	NORMAL	STATUS	-1	100	30	Lowers opponent's Defense.
+130	Light Screen	PSYCHIC	STATUS	-1	-1	30	Halves damage from Special attacks for 5 turns.
+131	Lovely Kiss	NORMAL	STATUS	-1	75	10	Puts opponent to sleep.
+132	Meditate	PSYCHIC	STATUS	-1	-1	40	Raises user's Attack.
+133	Metronome	NORMAL	STATUS	-1	-1	10	User performs almost any move in the game at random.
+134	Mimic	NORMAL	STATUS	-1	-1	10	Copies the opponent's last move.
+135	Minimize	NORMAL	STATUS	-1	-1	10	Sharply raises user's Evasiveness.
+136	Mirror Move	FLYING	STATUS	-1	-1	20	User performs the opponent's last move.
+137	Mist	ICE	STATUS	-1	-1	30	User's stats cannot be changed for a period of time.
+138	Poison Gas	POISON	STATUS	-1	90	40	Poisons opponent.
+139	Poison Powder	POISON	STATUS	-1	75	35	Poisons opponent.
+140	Recover	NORMAL	STATUS	-1	-1	10	User recovers half its max HP.
+141	Reflect	PSYCHIC	STATUS	-1	-1	20	Halves damage from Physical attacks for 5 turns.
+142	Rest	PSYCHIC	STATUS	-1	-1	10	User sleeps for 2 turns, but user is fully healed.
+143	Roar	NORMAL	STATUS	-1	-1	20	In battles, the opponent switches. In the wild, the Pok�mon runs.
+144	Sand Attack	GROUND	STATUS	-1	100	15	Lowers opponent's Accuracy.
+145	Screech	NORMAL	STATUS	-1	85	40	Sharply lowers opponent's Defense.
+146	Sharpen	NORMAL	STATUS	-1	-1	30	Raises user's Attack.
+147	Sing	NORMAL	STATUS	-1	55	15	Puts opponent to sleep.
+148	Sleep Powder	GRASS	STATUS	-1	75	15	Puts opponent to sleep.
+149	Smokescreen	NORMAL	STATUS	-1	100	20	Lowers opponent's Accuracy.
+150	Soft-Boiled	NORMAL	STATUS	-1	-1	10	User recovers half its max HP.
+151	Splash	NORMAL	STATUS	-1	-1	40	Doesn't do ANYTHING.
+152	Spore	GRASS	STATUS	-1	100	15	Puts opponent to sleep.
+153	String Shot	BUG	STATUS	-1	95	40	Sharply lowers opponent's Speed.
+154	Stun Spore	GRASS	STATUS	-1	75	30	Paralyzes opponent.
+155	Substitute	NORMAL	STATUS	-1	-1	10	Uses HP to creates a decoy that takes hits.
+156	Supersonic	NORMAL	STATUS	-1	55	20	Confuses opponent.
+157	Swords Dance	NORMAL	STATUS	-1	-1	20	Sharply raises user's Attack.
+158	Tail Whip	NORMAL	STATUS	-1	100	30	Lowers opponent's Defense.
+159	Teleport	PSYCHIC	STATUS	-1	-1	20	Allows user to flee wild battles; also warps player to last Pok�Center.
+160	Thunder Wave	ELECTRIC	STATUS	-1	90	20	Paralyzes opponent.
+161	Toxic	POISON	STATUS	-1	90	10	Badly poisons opponent.
+162	Transform	NORMAL	STATUS	-1	-1	10	User takes on the form and attacks of the opponent.
+163	Whirlwind	NORMAL	STATUS	-1	-1	20	In battles, the opponent switches. In the wild, the Pok�mon runs.
+164	Withdraw	WATER	STATUS	-1	-1	40	Raises user's Defense.

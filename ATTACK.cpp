@@ -15,8 +15,34 @@ ATTACK::ATTACK()
 
 void ATTACK::set_Name()
 {
-  string Name = "Bubblebeam";
+  string filename;
+  ifstream infile;
+  infile.open("ATTACKS.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Move_Number;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Move_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Move_Number >> Name)
+        {
+            lines_p++;
+        }
+    }
+  }
+
   this->Name = Name;
+  cout << "Name of this move is: " << Name << endl;
+  infile.close();
 }
 
 void ATTACK::set_Type()

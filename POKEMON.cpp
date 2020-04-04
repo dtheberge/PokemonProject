@@ -1,13 +1,19 @@
 //POKEMON IMPLEMENTATION FILE
-
 #include "POKEMON.h"
 #include <iostream>
 #include <iomanip>
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <string>
+#include <sstream>
 
 using std::cout;
 using std::endl;
 using std::setw;
 using std::right;
+using std::ifstream;
+using std::stringstream;
 
 //CONSTRUCTORS
 POKEMON::POKEMON()    //For Random Pokemon
@@ -22,6 +28,7 @@ POKEMON::POKEMON()    //For Random Pokemon
   set_DEF();
   set_SPA();
   set_SPD();
+  set_SPE();
 
   set_Moves();
   set_CurrentCondition(NO_CONDITION);
@@ -30,6 +37,7 @@ POKEMON::POKEMON()    //For Random Pokemon
   Battle_Stats.insert(pair<string, int>("DEF",0));
   Battle_Stats.insert(pair<string, int>("SPA",0));
   Battle_Stats.insert(pair<string, int>("SPD",0));
+  Battle_Stats.insert(pair<string, int>("SPE",0));
 
   Seen.insert(pair<int, string>(this->Pokedex_Number, this->Name));
 }
@@ -39,13 +47,14 @@ POKEMON::POKEMON(int starter)    //For Random Pokemon
   set_PokedexNumber(starter);
 
   set_Name();
+  set_Type1();
+  set_Type2();
   set_HPMax();
   set_ATK();
   set_DEF();
   set_SPA();
   set_SPD();
-  set_Type1();
-  set_Type2();
+  set_SPE();
 
   set_Moves();
   set_CurrentCondition(NO_CONDITION);
@@ -54,6 +63,7 @@ POKEMON::POKEMON(int starter)    //For Random Pokemon
   Battle_Stats.insert(pair<string, int>("DEF",0));
   Battle_Stats.insert(pair<string, int>("SPA",0));
   Battle_Stats.insert(pair<string, int>("SPD",0));
+  Battle_Stats.insert(pair<string, int>("SPE",0));
 
   Seen.insert(pair<int, string>(this->Pokedex_Number, this->Name));
 }
@@ -68,58 +78,299 @@ void POKEMON::set_PokedexNumber(int Pokedex_Number)
 void POKEMON::set_Name()
 {
   //Retrieve from File based on the instance's Pokedex Number
-  string Name = "Pikachu";
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Name);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name)
+        {
+            lines_p++;
+        }
+    }
+  }
+
   this->Name = Name;
-}
-
-void POKEMON::set_Type1()
-{
-  //Retrieve from File based on the instance's Pokedex Number
-  TYPE Type1 = GRASS;
-  this->Type1 = Type1;
-}
-
-void POKEMON::set_Type2()
-{
-  //Retrieve from File based on the instance's Pokedex Number
-  TYPE Type2 = WATER;
-  this->Type2 = Type2;
+  infile.close();
 }
 
 void POKEMON::set_HPMax()
 {
   //Retrieve from File based on the instance's Pokedex Number
-  int HP_Max = 111;
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max)
+        {
+            lines_p++;
+        }
+    }
+  }
+
   this->HP_Max = HP_Max;
-  this->HP_Current = HP_Max;
+  cout << "HPMax = " << HP_Max << endl;
+  infile.close();
 }
 
 void POKEMON::set_ATK()
 {
   //Retrieve from File based on the instance's Pokedex Number
-  int ATK = 30;
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max, ATK;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max >> ATK)
+        {
+            lines_p++;
+        }
+    }
+  }
+
   this->ATK = ATK;
+  cout << "ATK = " << ATK << endl;
+  infile.close();
 }
 
 void POKEMON::set_DEF()
 {
   //Retrieve from File based on the instance's Pokedex Number
-  int DEF = 40;
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max, ATK, DEF;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max >> ATK >> DEF)
+        {
+            lines_p++;
+        }
+    }
+  }
+
   this->DEF = DEF;
+  cout << "DEF = " << DEF << endl;
+  infile.close();
 }
 
 void POKEMON::set_SPA()
 {
   //Retrieve from File based on the instance's Pokedex Number
-  int SPA = 50;
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max, ATK, DEF, SPA;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max >> ATK >> DEF >> SPA)
+        {
+            lines_p++;
+        }
+    }
+  }
+
   this->SPA = SPA;
+  cout << "SPA = " << SPA << endl;
+  infile.close();
 }
 
 void POKEMON::set_SPD()
 {
   //Retrieve from File based on the instance's Pokedex Number
-  int SPD = 60;
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max, ATK, DEF, SPA, SPD;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max >> ATK >> DEF >> SPA >> SPD)
+        {
+            lines_p++;
+        }
+    }
+  }
+
   this->SPD = SPD;
+  cout << "SPD = " << SPD << endl;
+  infile.close();
+}
+
+void POKEMON::set_SPE()
+{
+  //Retrieve from File based on the instance's Pokedex Number
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max, ATK, DEF, SPA, SPD, SPE;
+  string Line, Name;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max >> ATK >> DEF >> SPA >> SPD >> SPE)
+        {
+            lines_p++;
+        }
+    }
+  }
+
+  this->SPE = SPE;
+  cout << "SPE = " << SPE << endl;
+  infile.close();
+}
+
+void POKEMON::set_Type1()
+{
+  //Retrieve from File based on the instance's Pokedex Number
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max, ATK, DEF, SPA, SPD, SPE, Total;
+  string Line, Name, TypeOne;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max >> ATK >> DEF >> SPA >> SPD >> SPE >> Total >> TypeOne)
+        {
+            lines_p++;
+        }
+    }
+  }
+
+  TYPE Type1 = convert(TypeOne);
+  this->Type1 = Type1;
+  cout << "Type1 = " << Type1 << endl;
+  infile.close();
+}
+
+void POKEMON::set_Type2()
+{
+  //Retrieve from File based on the instance's Pokedex Number
+  string filename;
+  ifstream infile;
+  infile.open("POKEMON.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int Pokedex_Number, HP_Max, ATK, DEF, SPA, SPD, SPE, Total;
+  string Line, Name, TypeOne, TypeTwo;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for (int i = 0; i < this->Pokedex_Number; ++i)
+  {
+    getline(infile, Line);
+    {
+        ss.str(Line);   // replace string steam buffer with line
+        ss.clear();     // reset string stream error bits
+  
+        if (ss >> Pokedex_Number >> Name >> HP_Max >> ATK >> DEF >> SPA >> SPD >> SPE >> Total >> TypeOne >> TypeTwo)
+        {
+            lines_p++;
+        }
+    }
+  }
+
+  TYPE Type2 = convert(TypeTwo);
+  this->Type2 = Type2;
+  cout << "Type2 = " << Type2 << endl;
+  infile.close();
 }
 
 void POKEMON::set_Moves()
@@ -204,6 +455,11 @@ int POKEMON::get_SPD() const
   return SPD;
 }
 
+int POKEMON::get_SPE() const
+{
+  return SPE;
+}
+
 ATTACK POKEMON::get_Move(int MoveIndex) const
 {
   return Move_Set[MoveIndex];
@@ -230,7 +486,7 @@ void POKEMON::get_Seen()
 {
   for(int i = 1; i <= 25; i++)
   {
-    for(int j = i; j <= 152; j += 25)
+    for(int j = i; j <= 151; j += 25)
     {
       auto iter = Seen.find(j);
       if (iter != Seen.end())
@@ -247,4 +503,24 @@ int POKEMON::Random_Pokemon()
 {
   int random_integer = 25;            //This is going to be random
   return random_integer;
+}
+
+TYPE POKEMON::convert(const std::string& str)
+{
+    if(str == "BUG")            return BUG;
+    else if(str == "DRAGON")    return DRAGON;
+    else if(str == "ELECTRIC")  return ELECTRIC;
+    else if(str == "FIGHT")     return FIGHT;
+    else if(str == "FIRE")      return FIRE;
+    else if(str == "FLYING")    return FLYING;
+    else if(str == "GHOST")     return GHOST;
+    else if(str == "GRASS")     return GRASS;
+    else if(str == "GROUND")    return GROUND;
+    else if(str == "ICE")       return ICE;
+    else if(str == "NORMAL")    return NORMAL;
+    else if(str == "POISON")    return POISON;
+    else if(str == "PSYCHIC")   return PSYCHIC;
+    else if(str == "ROCK")      return ROCK;
+    else if(str == "WATER")     return WATER;
+    else if(str == "NA")        return NA;
 }
