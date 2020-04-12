@@ -14,7 +14,6 @@ ITEM::ITEM()
   set_DEF();
   set_SPA();
   set_SPD();
-  set_SPE();
 }
 
 ITEM::ITEM(int Number)
@@ -28,7 +27,6 @@ ITEM::ITEM(int Number)
   set_DEF();
   set_SPA();
   set_SPD();
-  set_SPE();
 }
 
 //SETTERS
@@ -74,12 +72,6 @@ void ITEM::set_SPD()
   this->SPD = SPD;
 }
 
-void ITEM::set_SPE()
-{
-  int SPE = 25;
-  this->SPE = SPE;
-}
-
 void ITEM::set_Number(int Number)
 {
   this->Number = Number;
@@ -119,11 +111,6 @@ int ITEM::get_SPA()
 int ITEM::get_SPD()
 {
   return SPD;
-}
-
-int ITEM::get_SPE()
-{
-  return SPE;
 }
 
 int ITEM::Random_Item()

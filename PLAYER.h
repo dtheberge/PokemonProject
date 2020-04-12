@@ -12,7 +12,7 @@ class PLAYER : public PERSON
     vector<ITEM> Bag;          //Holds the Items of the Player
 
   public:
-    PLAYER(string Name);                             //Constructor
+    PLAYER();                             //Constructor
     void set_Name(string Name) override;             //Given by the user
     void set_Money(int Transaction) override;        //Alters the
     void add_Party(POKEMON Pokemon) override;        //Adds POKEMON to Party Vector

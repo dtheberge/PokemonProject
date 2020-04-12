@@ -18,7 +18,6 @@ class ITEM
     int DEF;
     int SPA;
     int SPD;
-    int SPE;
 
     int Number;
 
@@ -30,7 +29,6 @@ class ITEM
     void set_DEF();
     void set_SPA();
     void set_SPD();
-    void set_SPE();
     void set_Number(int Number);
 
   public:
@@ -48,7 +46,6 @@ class ITEM
     int get_DEF();
     int get_SPA();
     int get_SPD();
-    int get_SPE();
 
     int Random_Item();
 };

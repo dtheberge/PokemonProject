@@ -1,6 +1,6 @@
 #ifndef POKEMON_H
 #define POKEMON_H
- 
+
 #include <array>
 #include <map>
 #include <array>
@@ -36,6 +36,7 @@ class POKEMON
     int SPA;
     int SPD;
     int SPE;
+
     array<ATTACK, 4> Move_Set;      //Holds the Attack of a Pokemon (Doesn't change after the inital setter)
 
     CONDITION Current_Condition;    //Always NO_CONDITION when outside of a battle

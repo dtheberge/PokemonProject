@@ -21,14 +21,14 @@ POKEMON::POKEMON()    //For Random Pokemon
   set_PokedexNumber(Random_Pokemon());
 
   set_Name();
-  set_Type1();
-  set_Type2();
   set_HPMax();
   set_ATK();
   set_DEF();
   set_SPA();
   set_SPD();
   set_SPE();
+  set_Type1();
+  set_Type2();
 
   set_Moves();
   set_CurrentCondition(NO_CONDITION);
@@ -47,14 +47,14 @@ POKEMON::POKEMON(int starter)    //For Random Pokemon
   set_PokedexNumber(starter);
 
   set_Name();
-  set_Type1();
-  set_Type2();
   set_HPMax();
   set_ATK();
   set_DEF();
   set_SPA();
   set_SPD();
   set_SPE();
+  set_Type1();
+  set_Type2();
 
   set_Moves();
   set_CurrentCondition(NO_CONDITION);

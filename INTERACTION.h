@@ -3,9 +3,9 @@
 
 #include <iostream>
 #include <string>
-
 #include <chrono>       //For Specifying Time
 #include <thread>       //Helps Control the Processes
+#include "PLAYER.h"
 
 using namespace std;
 
@@ -15,6 +15,7 @@ class INTERACTION {
   public:
     INTERACTION& operator<<(const string& text);
 
+    static void Introduction(const PLAYER&);
     //BATTLE FUNCTIONS
     //BATTLE()
     //TURN()

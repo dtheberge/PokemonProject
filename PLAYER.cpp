@@ -3,9 +3,9 @@
 #include "PLAYER.h"
 
 //CONSTRUCTOR
-PLAYER::PLAYER (string Name)
+PLAYER::PLAYER ()
 {
-  set_Name(Name);
+  set_Name("");
   Money = 0;
   //Vector is initially empty
 }

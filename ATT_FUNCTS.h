@@ -11,7 +11,7 @@ using std::cout;
 
 namespace ATT_FUNCTS
 {
-    enum ATTACK_FUNCT
+    enum ATTACK
     {
       //PHYSICAL ATTACKS
       BARRAGE, BIDE, BIND, BITE, BODY_SLAM, BONE_CLUB, BONEMERANG,
@@ -33,7 +33,7 @@ namespace ATT_FUNCTS
       SLASH, SPIKE_CANNON, STOMP,STRENGTH,STRUGGLE, SUBMISSION, SUPER_FANG,
       TACKLE, TAKE_DOWN, THRASH, THUNDER_PUNCH, TWINEEDLE,
       VINE_WHIP, VISE_GRIP,
-      WATERFALL, WING_ATTACK, WRAP
+      WATERFALL, WING_ATTACK, WRAP,
 
       //SPECIAL ATTACKS
       ABSORB, ACID, AURORA_BEAM,
@@ -66,13 +66,13 @@ namespace ATT_FUNCTS
       MEDITATE, METRONOME, MIMIC, MINIMIZE, MIRROR_MOVE, MIST,
       POISON_GAS, POISON_POWDER,
       RECOVER, REFLECT, REST, ROAR,
-      SAND_ATTACK, SCREECH, SHARPEN, SING, SLEEP_POWDER, SMOKESCREEN, SOFT-BOILED,
+      SAND_ATTACK, SCREECH, SHARPEN, SING, SLEEP_POWDER, SMOKESCREEN, SOFT_BOILED,
       SPLASH, SPORE, STRING_SHOT, STUN_SPORE, SUBSTITUTE, SUPERSONIC, SWORDS_DANCE,
       TAIL_WHIP, TELEPORT, THUNDER_WAVE, TOXIC, TRANSFORM,
       WHIRLWIND, WITHDRAW
     };
 
-    //SPECIAL ATTACKS-------------------------------------------------------------
+    //SPECIAL ATTACKS_____________________________________________________________
     void Absorb(POKEMON Attacker, POKEMON Defender)
     {
       cout << "Absorb Function was called.";
@@ -248,7 +248,7 @@ namespace ATT_FUNCTS
     }
 
 
-    //PHYSICAL ATTACKS------------------------------------------------------------
+    //PHYSICAL ATTACKS____________________________________________________________
     void Barrage(POKEMON Attacker, POKEMON Defender)
     {
       cout << "Barrage Function was called.";
@@ -336,7 +336,7 @@ namespace ATT_FUNCTS
 
     void Double_Edge(POKEMON Attacker, POKEMON Defender)
     {
-      cout << "Double_Edge Function was called.";
+      cout << "Double Edge Function was called.";
     }
 
     void Drill_Peck(POKEMON Attacker, POKEMON Defender)
@@ -521,7 +521,7 @@ namespace ATT_FUNCTS
 
     void Self_Destruct(POKEMON Attacker, POKEMON Defender)
     {
-      cout << "Self_Destruct Function was called.";
+      cout << "Self Destruct Function was called.";
     }
 
     void Skull_Bash(POKEMON Attacker, POKEMON Defender)
@@ -625,229 +625,229 @@ namespace ATT_FUNCTS
     }
 
 
-  //STATUS------------------------------------------------------------------------
-    // void Acid_Armor(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Acid_Armor Function was called.";
-    // }
-    // void Agility(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Agility Function was called.";
-    // }
-    // void Amnesia(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Amnesia Function was called.";
-    // }
-    // void Barrier(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Barrier Function was called.";
-    // }
-    // void Confuse_Ray(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Confuse_Ray Function was called.";
-    // }
-    // void Conversion(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Conversion Function was called.";
-    // }
-    // void Defense_Curl(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Defense_Curl Function was called.";
-    // }
-    // void Disable(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Disable Function was called.";
-    // }
-    // void Double_Team(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Double_Team Function was called.";
-    // }
-    // void Flash(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Flash Function was called.";
-    // }
-    // void Focus_Energy(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Focus_Energy Function was called.";
-    // }
-    // void Glare(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Glare Function was called.";
-    // }
-    // void Growl(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Growl Function was called.";
-    // }
-    // void Growth(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Growth Function was called.";
-    // }
-    // void Harden(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Harden Function was called.";
-    // }
-    // void Haze(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Haze Function was called.";
-    // }
-    // void Hypnosis(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Hypnosis Function was called.";
-    // }
-    // void Kinesis(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Kinesis Function was called.";
-    // }
-    // void Leech_Seed(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Leech_Seed Function was called.";
-    // }
-    // void Leer(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Leer Function was called.";
-    // }
-    // void Light_Screen(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Light_Screen Function was called.";
-    // }
-    // void Lovely_Kiss(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Lovely_Kiss Function was called.";
-    // }
-    // void Meditate(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Meditate Function was called.";
-    // }
-    // void Metronome(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Metronome Function was called.";
-    // }
-    // void Mimic(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Mimic Function was called.";
-    // }
-    // void Minimize(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Minimize Function was called.";
-    // }
-    // void Mirror_Move(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Mirror_Move Function was called.";
-    // }
-    // void Mist(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Mist Function was called.";
-    // }
-    // void Poison_Gas(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Poison_Gas Function was called.";
-    // }
-    // void Poison_Powder(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Poison_Powder Function was called.";
-    // }
-    // void Recover(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Recover Function was called.";
-    // }
-    // void Reflect(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Reflect Function was called.";
-    // }
-    // void Rest(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Rest Function was called.";
-    // }
-    // void Roar(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Roar Function was called.";
-    // }
-    // void Sand_Attack(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Sand_Attack Function was called.";
-    // }
-    // void Screech(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Screech Function was called.";
-    // }
-    // void Sharpen(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Sharpen Function was called.";
-    // }
-    // void Sing(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Sing Function was called.";
-    // }
-    // void Sleep_Powder(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Sleep_Powder Function was called.";
-    // }
-    // void Smokescreen(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Smokescreen Function was called.";
-    // }
-    // void Soft-Boiled(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Soft-Boiled Function was called.";
-    // }
-    // void Splash(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Splash Function was called.";
-    // }
-    // void Spore(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Spore Function was called.";
-    // }
-    // void String_Shot(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "String_Shot Function was called.";
-    // }
-    // void Stun_Spore(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Stun_Spore Function was called.";
-    // }
-    // void Substitute(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Substitute Function was called.";
-    // }
-    // void Supersonic(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Supersonic Function was called.";
-    // }
-    // void Swords_Dance(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Swords_Dance Function was called.";
-    // }
-    // void Tail_Whip(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Tail_Whip Function was called.";
-    // }
-    // void Teleport(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Teleport Function was called.";
-    // }
-    // void Thunder_Wave(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Thunder_Wave Function was called.";
-    // }
-    // void Toxic(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Toxic Function was called.";
-    // }
-    // void Transform(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Transform Function was called.";
-    // }
-    // void Whirlwind(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Whirlwind Function was called.";
-    // }
-    // void Withdraw(POKEMON Attacker, POKEMON Defender)
-    // {
-    //   cout << "Withdraw Function was called.";
-    // }
+  //STATUS________________________________________________________________________
+    void Acid_Armor(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Acid Armor Function was called.";
+    }
+    void Agility(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Agility Function was called.";
+    }
+    void Amnesia(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Amnesia Function was called.";
+    }
+    void Barrier(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Barrier Function was called.";
+    }
+    void Confuse_Ray(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Confuse Ray Function was called.";
+    }
+    void Conversion(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Conversion Function was called.";
+    }
+    void Defense_Curl(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Defense Curl Function was called.";
+    }
+    void Disable(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Disable Function was called.";
+    }
+    void Double_Team(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Double Team Function was called.";
+    }
+    void Flash(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Flash Function was called.";
+    }
+    void Focus_Energy(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Focus Energy Function was called.";
+    }
+    void Glare(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Glare Function was called.";
+    }
+    void Growl(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Growl Function was called.";
+    }
+    void Growth(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Growth Function was called.";
+    }
+    void Harden(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Harden Function was called.";
+    }
+    void Haze(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Haze Function was called.";
+    }
+    void Hypnosis(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Hypnosis Function was called.";
+    }
+    void Kinesis(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Kinesis Function was called.";
+    }
+    void Leech_Seed(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Leech Seed Function was called.";
+    }
+    void Leer(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Leer Function was called.";
+    }
+    void Light_Screen(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Light Screen Function was called.";
+    }
+    void Lovely_Kiss(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Lovely Kiss Function was called.";
+    }
+    void Meditate(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Meditate Function was called.";
+    }
+    void Metronome(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Metronome Function was called.";
+    }
+    void Mimic(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Mimic Function was called.";
+    }
+    void Minimize(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Minimize Function was called.";
+    }
+    void Mirror_Move(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Mirror Move Function was called.";
+    }
+    void Mist(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Mist Function was called.";
+    }
+    void Poison_Gas(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Poison Gas Function was called.";
+    }
+    void Poison_Powder(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Poison Powder Function was called.";
+    }
+    void Recover(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Recover Function was called.";
+    }
+    void Reflect(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Reflect Function was called.";
+    }
+    void Rest(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Rest Function was called.";
+    }
+    void Roar(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Roar Function was called.";
+    }
+    void Sand_Attack(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Sand Attack Function was called.";
+    }
+    void Screech(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Screech Function was called.";
+    }
+    void Sharpen(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Sharpen Function was called.";
+    }
+    void Sing(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Sing Function was called.";
+    }
+    void Sleep_Powder(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Sleep Powder Function was called.";
+    }
+    void Smokescreen(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Smokescreen Function was called.";
+    }
+    void Soft_Boiled(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Soft Boiled Function was called.";
+    }
+    void Splash(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Splash Function was called.";
+    }
+    void Spore(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Spore Function was called.";
+    }
+    void String_Shot(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "String Shot Function was called.";
+    }
+    void Stun_Spore(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Stun Spore Function was called.";
+    }
+    void Substitute(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Substitute Function was called.";
+    }
+    void Supersonic(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Supersonic Function was called.";
+    }
+    void Swords_Dance(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Swords Dance Function was called.";
+    }
+    void Tail_Whip(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Tail Whip Function was called.";
+    }
+    void Teleport(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Teleport Function was called.";
+    }
+    void Thunder_Wave(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Thunder Wave Function was called.";
+    }
+    void Toxic(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Toxic Function was called.";
+    }
+    void Transform(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Transform Function was called.";
+    }
+    void Whirlwind(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Whirlwind Function was called.";
+    }
+    void Withdraw(POKEMON Attacker, POKEMON Defender)
+    {
+      cout << "Withdraw Function was called.";
+    }
 
-  //ATTACK Switch Function--------------------------------------------------------
+  //ATTACK Switch Function________________________________________________________
 
   void ATT_FUNCT_CALL(int Function, POKEMON Attacker, POKEMON Defender)
   {
@@ -968,61 +968,61 @@ namespace ATT_FUNCTS
       case WRAP: Wrap(Attacker, Defender); break;
 
       //STATUS
-      // case ACID ARMOR_FUNCT: Acid Armor(Attacker, Defender); break;
-      // case AGILITY_FUNCT: Agility(Attacker, Defender); break;
-      // case AMNESIA_FUNCT: Amnesia(Attacker, Defender); break;
-      // case BARRIER_FUNCT: Barrier(Attacker, Defender); break;
-      // case CONFUSE RAY_FUNCT: Confuse Ray(Attacker, Defender); break;
-      // case CONVERSION_FUNCT: Conversion(Attacker, Defender); break;
-      // case DEFENSE CURL_FUNCT: Defense Curl(Attacker, Defender); break;
-      // case DISABLE_FUNCT: Disable(Attacker, Defender); break;
-      // case DOUBLE TEAM_FUNCT: Double Team(Attacker, Defender); break;
-      // case FLASH_FUNCT: Flash(Attacker, Defender); break;
-      // case FOCUS ENERGY_FUNCT: Focus Energy(Attacker, Defender); break;
-      // case GLARE_FUNCT: Glare(Attacker, Defender); break;
-      // case GROWL_FUNCT: Growl(Attacker, Defender); break;
-      // case GROWTH_FUNCT: Growth(Attacker, Defender); break;
-      // case HARDEN_FUNCT: Harden(Attacker, Defender); break;
-      // case HAZE_FUNCT: Haze(Attacker, Defender); break;
-      // case HYPNOSIS_FUNCT: Hypnosis(Attacker, Defender); break;
-      // case KINESIS_FUNCT: Kinesis(Attacker, Defender); break;
-      // case LEECH SEED_FUNCT: Leech Seed(Attacker, Defender); break;
-      // case LEER_FUNCT: Leer(Attacker, Defender); break;
-      // case LIGHT SCREEN_FUNCT: Light Screen(Attacker, Defender); break;
-      // case LOVELY KISS_FUNCT: Lovely Kiss(Attacker, Defender); break;
-      // case MEDITATE_FUNCT: Meditate(Attacker, Defender); break;
-      // case METRONOME_FUNCT: Metronome(Attacker, Defender); break;
-      // case MIMIC_FUNCT: Mimic(Attacker, Defender); break;
-      // case MINIMIZE_FUNCT: Minimize(Attacker, Defender); break;
-      // case MIRROR MOVE_FUNCT: Mirror Move(Attacker, Defender); break;
-      // case MIST_FUNCT: Mist(Attacker, Defender); break;
-      // case POISON GAS_FUNCT: Poison Gas(Attacker, Defender); break;
-      // case POISON POWDER_FUNCT: Poison Powder(Attacker, Defender); break;
-      // case RECOVER_FUNCT: Recover(Attacker, Defender); break;
-      // case REFLECT_FUNCT: Reflect(Attacker, Defender); break;
-      // case REST_FUNCT: Rest(Attacker, Defender); break;
-      // case ROAR_FUNCT: Roar(Attacker, Defender); break;
-      // case SAND ATTACK_FUNCT: Sand Attack(Attacker, Defender); break;
-      // case SCREECH_FUNCT: Screech(Attacker, Defender); break;
-      // case SHARPEN_FUNCT: Sharpen(Attacker, Defender); break;
-      // case SING_FUNCT: Sing(Attacker, Defender); break;
-      // case SLEEP POWDER_FUNCT: Sleep Powder(Attacker, Defender); break;
-      // case SMOKESCREEN_FUNCT: Smokescreen(Attacker, Defender); break;
-      // case SOFT-BOILED_FUNCT: Soft-Boiled(Attacker, Defender); break;
-      // case SPLASH_FUNCT: Splash(Attacker, Defender); break;
-      // case SPORE_FUNCT: Spore(Attacker, Defender); break;
-      // case STRING SHOT_FUNCT: String Shot(Attacker, Defender); break;
-      // case STUN SPORE_FUNCT: Stun Spore(Attacker, Defender); break;
-      // case SUBSTITUTE_FUNCT: Substitute(Attacker, Defender); break;
-      // case SUPERSONIC_FUNCT: Supersonic(Attacker, Defender); break;
-      // case SWORDS DANCE_FUNCT: Swords Dance(Attacker, Defender); break;
-      // case TAIL WHIP_FUNCT: Tail Whip(Attacker, Defender); break;
-      // case TELEPORT_FUNCT: Teleport(Attacker, Defender); break;
-      // case THUNDER WAVE_FUNCT: Thunder Wave(Attacker, Defender); break;
-      // case TOXIC_FUNCT: Toxic(Attacker, Defender); break;
-      // case TRANSFORM_FUNCT: Transform(Attacker, Defender); break;
-      // case WHIRLWIND_FUNCT: Whirlwind(Attacker, Defender); break;
-      // case WITHDRAW_FUNCT: Withdraw(Attacker, Defender); break;
+      case ACID_ARMOR: Acid_Armor(Attacker, Defender); break;
+      case AGILITY: Agility(Attacker, Defender); break;
+      case AMNESIA: Amnesia(Attacker, Defender); break;
+      case BARRIER: Barrier(Attacker, Defender); break;
+      case CONFUSE_RAY: Confuse_Ray(Attacker, Defender); break;
+      case CONVERSION: Conversion(Attacker, Defender); break;
+      case DEFENSE_CURL: Defense_Curl(Attacker, Defender); break;
+      case DISABLE: Disable(Attacker, Defender); break;
+      case DOUBLE_TEAM: Double_Team(Attacker, Defender); break;
+      case FLASH: Flash(Attacker, Defender); break;
+      case FOCUS_ENERGY: Focus_Energy(Attacker, Defender); break;
+      case GLARE: Glare(Attacker, Defender); break;
+      case GROWL: Growl(Attacker, Defender); break;
+      case GROWTH: Growth(Attacker, Defender); break;
+      case HARDEN: Harden(Attacker, Defender); break;
+      case HAZE: Haze(Attacker, Defender); break;
+      case HYPNOSIS: Hypnosis(Attacker, Defender); break;
+      case KINESIS: Kinesis(Attacker, Defender); break;
+      case LEECH_SEED: Leech_Seed(Attacker, Defender); break;
+      case LEER: Leer(Attacker, Defender); break;
+      case LIGHT_SCREEN: Light_Screen(Attacker, Defender); break;
+      case LOVELY_KISS: Lovely_Kiss(Attacker, Defender); break;
+      case MEDITATE: Meditate(Attacker, Defender); break;
+      case METRONOME: Metronome(Attacker, Defender); break;
+      case MIMIC: Mimic(Attacker, Defender); break;
+      case MINIMIZE: Minimize(Attacker, Defender); break;
+      case MIRROR_MOVE: Mirror_Move(Attacker, Defender); break;
+      case MIST: Mist(Attacker, Defender); break;
+      case POISON_GAS: Poison_Gas(Attacker, Defender); break;
+      case POISON_POWDER: Poison_Powder(Attacker, Defender); break;
+      case RECOVER: Recover(Attacker, Defender); break;
+      case REFLECT: Reflect(Attacker, Defender); break;
+      case REST: Rest(Attacker, Defender); break;
+      case ROAR: Roar(Attacker, Defender); break;
+      case SAND_ATTACK: Sand_Attack(Attacker, Defender); break;
+      case SCREECH: Screech(Attacker, Defender); break;
+      case SHARPEN: Sharpen(Attacker, Defender); break;
+      case SING: Sing(Attacker, Defender); break;
+      case SLEEP_POWDER: Sleep_Powder(Attacker, Defender); break;
+      case SMOKESCREEN: Smokescreen(Attacker, Defender); break;
+      case SOFT_BOILED: Soft_Boiled(Attacker, Defender); break;
+      case SPLASH: Splash(Attacker, Defender); break;
+      case SPORE: Spore(Attacker, Defender); break;
+      case STRING_SHOT: String_Shot(Attacker, Defender); break;
+      case STUN_SPORE: Stun_Spore(Attacker, Defender); break;
+      case SUBSTITUTE: Substitute(Attacker, Defender); break;
+      case SUPERSONIC: Supersonic(Attacker, Defender); break;
+      case SWORDS_DANCE: Swords_Dance(Attacker, Defender); break;
+      case TAIL_WHIP: Tail_Whip(Attacker, Defender); break;
+      case TELEPORT: Teleport(Attacker, Defender); break;
+      case THUNDER_WAVE: Thunder_Wave(Attacker, Defender); break;
+      case TOXIC: Toxic(Attacker, Defender); break;
+      case TRANSFORM: Transform(Attacker, Defender); break;
+      case WHIRLWIND: Whirlwind(Attacker, Defender); break;
+      case WITHDRAW: Withdraw(Attacker, Defender); break;
     }
   }
 }
