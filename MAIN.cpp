@@ -31,8 +31,13 @@ int main()
   system("clear");
 
   INTERACTION delay;
+
   PLAYER USER;
-  INTERACTION::Introduction(USER);
+  POKEMON Starter = INTERACTION::Introduction(&USER);
+
+  //cout << "Starters Name: " << Starter.get_Name();
+
+  //delay << "Name of user: " << USER.get_Name();
 
   // PLAYER Glock("Glockinator");
   // NPC Trainer;

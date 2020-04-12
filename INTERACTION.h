@@ -6,6 +6,7 @@
 #include <chrono>       //For Specifying Time
 #include <thread>       //Helps Control the Processes
 #include "PLAYER.h"
+#include "POKEMON.h"
 
 using namespace std;
 
@@ -14,8 +15,9 @@ class INTERACTION {
   private:
   public:
     INTERACTION& operator<<(const string& text);
+    static void Continue();
 
-    static void Introduction(const PLAYER&);
+    static POKEMON Introduction(PLAYER*);
     //BATTLE FUNCTIONS
     //BATTLE()
     //TURN()
