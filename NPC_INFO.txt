@@ -1,0 +1,136 @@
+1	Beauty															
+2	Biker															
+3	Bird Keeper	               														
+4	Blackbelt															
+5	Bug Catcher															
+6	Burglar															
+7	Channeler															
+8	Cooltrainer															
+9	Cue Ball															
+10	Engineer															
+11	Fisherman															
+12	Gambler															
+13	Gentleman															
+14	Hiker															
+15	Juggler															
+16	Lass															
+17	PokeManiac															
+18	Psychic															
+19	Rocker															
+20	Rocket															
+21	Sailor															
+22	Scientist															
+23	Super Nerd															
+24	Swimmer															
+25	Tamer															
+26	Youngster															
+27																
+28	Hey! You have POKEMON! Come on! Let's battle'em !	No! CATERPIE can't cut it!														
+29	Yo! You can't jam out if you're a POKEMON trainer!	Huh? I ran out of POKEMON!														
+30	Hey, wait up! What's the hurry?	I give! You're good at this!														
+31	Stop right there, kid!	Darn! Light years isn't time! It measures distance!														
+32	You looked at me, didn't you?	You're mean!														
+33	Hey! I met you in VIRIDIAN FOREST!	You beat me again!														
+34	Hi! I like shorts! They're comfy and easy to wear!	I don't believe it!														
+35	Are you a trainer? Let's fight!	If I had new POKEMON I would've won!														
+36	Hey! You're not wearing shorts!	Lost! Lost! Lost!														
+37	That look you gave me, it's so intriguing!	Be nice!														
+38	You can fight my new POKEMON!	Done like dinner!														
+39	Eek! Did you touch me?	That's it?														
+40	What? I'm waiting for my friends to find me here.	I lost?														
+41	What! Don't sneak up on me!	My POKEMON won't do!														
+42	Did you come to explore too?	Losing stinks!														
+43	WHOA! You shocked me! Oh, you're just a kid!	Wow! Shocked again!														
+44	We, TEAM ROCKET, are POKEMON gangsters!	I blew it!														
+45	We're pulling a big job here! Get lost, kid!	So, you are good.														
+46	Little kids should leave grown-ups alone!	I'm steamed!														
+47	Splash! I'm first up! Let's do it!	That can't be!														
+48	I'm more than good enough for you!	You overwhelmed me!														
+49	I just got down from MT.MOON, but I'm ready!	You work hard!														
+50	Local trainers come here to practice!	You're decent.														
+51	Dad took me to a great party on S.S.ANNE at VERMILION CITY!	I'm not mad!														
+52	Hi! My boy friend is cool!	I was in bad condition!														
+53	I'm off to see a POKEMON collector at the cape!	You got me.														
+54	I'm a cool guy. I've got a girl friend!	Aww, darn...														
+55	I knew I had to fight you!	I'd knew I'd lose too!														
+56	My friend has a cute POKEMON. I'm so jealous!	I'm not so jealous!														
+57	There aren't many bugs out here.	No! You're kidding!														
+58	Who's there? Quit listening in on us!	I just can't win!														
+59	Excuse me! This is a private conversation!	Ugh! I hate losing!														
+60	I've never seen you around! Are you good?	You are too good!														
+61	Me? Well, OK. I'll play!	Just didn't work!														
+62	Huh? You want to talk to me?	I didnt' start it!														
+63	I travel alone on my journeys! My POKEMON are my only friends!	My, my friends...														
+64	You pup! How dare you barge in!	Humph! You rude child!														
+65	I collected these POKEMON from all around the world!	Oh no! I went around the world for these!														
+66	I love POKEMON! Do you?	Wow! You're great!														
+67	You know what they say about sailors and fighting!	Right! Good fight, mate!														
+68	I like feisty kids like you!	Argh! Lost it!														
+69	Us sailors have POKEMON too!	OK, you're not bad.														
+70	Hello stranger! Stop and chat!	Darn! I let that one get away!														
+71	Matey, you're walking the plank if you lose!	Argh! Beaten by a kid!														
+72	Check out what I fished up!	I'm all out!														
+73	Competing against the young keeps me youthful.	Good fight! Ah, I feel young again!														
+74	Which do you like, a strong or a rare POKEMON?	I must salute you!														
+75	I never saw you at the party.	Take it easy!														
+76	Ahoy there! Are you seasick?	I was just careless!														
+77	Hey matey! Let's do a little jig!	You're impressive!														
+78	This is no place for kids!	Wow! Surprised me!														
+79	I'm a lightweight, but I'm good with electricity!	Fried!														
+80	When I was in the Army, LT.SURGE was my strict CO!	Stop! You're very good!														
+81	You have POKEMON with you! You're mine!	You deceived me!														
+82	Bwahaha! Great! I was bored, eh!	Keep it coming, eh! Oh wait. I'm out of POKEMON!														
+83	Who's that walking with those good looking POKEMON?	Out like a light!														
+84	I got up early every day to raise my POKEMON from cocoons!	WHAT? What a total waste of time!														
+85	Go, my super bug POKEMON!	My bugs...														
+86	I'm taking ROCK TUNNEL to go to LAVENDER...	Can't measure up!														
+87	Hahaha! Aren't you a little toughie!	What's that?														
+88	Don't you dare condescend me!	No! You're too much!														
+89	Hahahaha! Come on, dude!	Hahahaha! You beat me fair!														
+90	I've been to a POKEMON GYM a few times. But, I lost each time.	Ohh! Blew it again!														
+91	Wow, are you a POKEMANIAC too? Want to see my collection?	Humph. I'm not angry!														
+92	POKEMON fight! Ready, go!	Game over!														
+93	I draw POKEMON when I'm home.	Whew! I'm exhausted!														
+94	I don't often come here, but I will fight you.	Oh! I lost!														
+95	Do you now about costume players?	Well, that's that.														
+96	My POKEMON techniques will leave you crying!	I give! You're a better technician!														
+97	Hit me with your best shot!	Fired away!														
+98	Outsiders like you need to show me some respect!	I give!														
+99	Hikers leave twigs as trail markers.	Ohhh! I did my best!														
+100	Hahaha! Can you beat my power?	Oops! Out-muscled!														
+101	You have a POKEDEX? I want one too!	Shoot! I'm so jealous!														
+102	Eek! Don't try anything funny in the dark!	It was too dark!														
+103	You have POKEMON! Let's start!	You play hard!														
+104	I came this far for POKEMON!	I'm out of POKEMON!														
+105	I'm feeling a bit faint from this tough hike.	I'm not up to it!														
+106	Ha-hahah-ah-ha!	Ha-haha! Not laughing! Ha-hay fever! Haha-ha-choo!														
+107	Ah! This mountain air is delicious!	That cleared my head!														
+108	Hi kid, want to see my POKEMON?	Oh no! My POKEMON!														
+109	I'm a rambling, gambling dude!	Missed the big score!														
+110	You need a strategy to win at this!	It's not logical!														
+111	I like NIDORAN, so I collect them!	Why? Why??														
+112	School is fun, but so are POKEMON.	I'll stay with school.														
+113	MEOWTH is so cute, meow, meow, meow!	Meow!														
+114	We must look silly standing here like this!	Look what you did!														
+115	All right! Let's roll the dice!	Drat! Came up short!														
+116	You look good at POKEMON, but how's your chem?	Ow! Meltdown!														
+117	Hey! You are not allowed in here!	You're too rough!														
+118	I was getting bored.	My makeup!														
+119	Look at my grass POKEMON! They're so easy to raise!	No!														
+120	Aren't you the peeping Tom?	I'm in shock!														
+121	Pleased to meet you. My hobby is POKEMON training.	Oh! Splendid!														
+122	Hoohah! You're trespassing in our FIGHTING DOJO!	Oof! I give up!														
+123	 I hear you're good! Show me!	Judge! 1 point!														
+124	Nothing tough frightens me! I break boulders for training!	Yow! Stubbed fingers!														
+125	Hoargh! Take your shoes off!	I give up!														
+126	Grunt! I am the KARATE MASTER! I am the LEADER here! You wish to challenge us? Expect no mercy! Fwaaa!															
+127	Hey kid! What are you doing here?	I goofed!														
+128	Quit messing with us, kid!	I give up!														
+129	Whaaat? There shouldn't be any children here?	Oh goodness!														
+130	I am one of the 4 ROCKET BROTHERS!	Flame out!														
+131	That's as far as you'll go!	Not enough grit!														
+132	Your POKEMON have weak points! I can nail them!	You hammered me!														
+133	Your POKEMON seem to adore you, kid!	Ghaaah!														
+134	Stop right there! Don't you move!	Don't... Please!														
+135	You know that power alone isn't enough!	I don't believe this!														
+136	Does our unseen power scare you?	I never foresaw this!														

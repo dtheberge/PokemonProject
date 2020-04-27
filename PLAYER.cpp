@@ -21,11 +21,6 @@ void PLAYER::set_Money(int Transaction)
   this->Money += Transaction;
 }
 
-void PLAYER::add_Party(POKEMON Pokemon)  //There has to be a reason this definition is different than the other
-{
-  Party.push_back(Pokemon);
-}
-
 //If erasing a Pokemon,  Be sure to add it to where it needs to be first
 void PLAYER::remove_Party(int indexToRemove)
 {
@@ -44,4 +39,14 @@ void PLAYER::remove_Bag(int indexToRemove)
     auto iter = Bag.begin();
     iter += indexToRemove;
     Bag.erase(iter);
+}
+
+int PLAYER::get_BagSize() const
+{
+  return Bag.size();
+}
+
+ITEM PLAYER::get_Item(int index) const
+{
+  return Bag[index];
 }

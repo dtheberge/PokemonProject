@@ -14,12 +14,13 @@ class PLAYER : public PERSON
   public:
     PLAYER();                             //Constructor
     void set_Name(string Name) override;             //Given by the user
-    void set_Money(int Transaction) override;        //Alters the
-    void add_Party(POKEMON Pokemon) override;        //Adds POKEMON to Party Vector
+    void set_Money(int Transaction) override;        
     void remove_Party(int indexToRemove) override;   //Removes a specified POKEMON from Poket Vector
     void add_Bag(ITEM Item);                         //Adds an Item object to the Bag Vector
     void remove_Bag(int indexToRemove);              //Removes an Item object from the Bag Vector
 
+    int get_BagSize() const;
+    ITEM get_Item(int index) const;
 };
 
 #endif

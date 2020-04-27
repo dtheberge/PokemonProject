@@ -1,10 +1,10 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-#include "ENUMS.h"
+#include "GAME_INFO.h"
 #include "POKEMON.h"
-
-using namespace ENUMS;
+#include <cstdlib>        //Random Numbers
+#include <ctime>          //Random Numbers
 
 class POKEMON;
 
@@ -16,38 +16,39 @@ class ITEM
     int HP;
     int ATK;
     int DEF;
-    int SPA;
+    int SPE;
     int SPD;
+    int Buy;
+    int Sell;
 
     int Number;
 
-    //SETTERS
-    void set_Name();
-    void set_Condition();
-    void set_HP();
-    void set_ATK();
-    void set_DEF();
-    void set_SPA();
-    void set_SPD();
-    void set_Number(int Number);
+  //SETTERS
+  void set_Number(int Number);
+  void set_Information();
+
+  CONDITION convert(const std::string& str);
 
   public:
     ITEM();
     ITEM(int Number);
 
-    //Overloaded Operator
-    bool Pokeball(POKEMON Pokemon, ITEM Item);
-
     //GETTERS
-    string get_Name();
-    CONDITION get_Condition();
-    int get_HP();
-    int get_ATK();
-    int get_DEF();
-    int get_SPA();
-    int get_SPD();
+    string get_Name() const;
+    CONDITION get_Condition() const;
+
+    int get_Number() const;
+    int get_HP() const;
+    int get_ATK() const;
+    int get_DEF() const;
+    int get_SPE() const;
+    int get_SPD() const;
+    int get_Buy() const;
+    int get_Sell() const;
 
     int Random_Item();
+    bool Pokeball(POKEMON Pokemon, ITEM Item);
+    friend void Apply_Item(ITEM Item);
 };
 
 #endif

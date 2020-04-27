@@ -6,121 +6,172 @@
 ITEM::ITEM()
 {
   set_Number(Random_Item());
-
-  set_Name();
-  set_Condition();
-  set_HP();
-  set_ATK();
-  set_DEF();
-  set_SPA();
-  set_SPD();
+  set_Information();
 }
 
 ITEM::ITEM(int Number)
 {
   set_Number(Number);
-
-  set_Name();
-  set_Condition();
-  set_HP();
-  set_ATK();
-  set_DEF();
-  set_SPA();
-  set_SPD();
+  set_Information();
 }
 
 //SETTERS
-void ITEM::set_Name()
+void ITEM::set_Information()
 {
-  string Name = "Full Heal";          //Pulled from the text file
+  ifstream infile;
+  infile.open("ITEMS.txt");   // if file opened successfully
+  infile.ignore(1000, '\n');    //Ignore the first line of text file
+
+  int x = 0;
+  string Number, Name, Condition, HP, ATK, DEF, SPE, SPD, Buy, Sell;
+
+  stringstream ss;
+  int lines_p = 0;
+
+  for(int i = 0; i < this->Number; ++i)
+  {
+    infile.ignore(10000, '\n');
+  }
+
+  getline(infile, Number, '\t');
+  getline(infile, Name, '\t');
+  getline(infile, Condition, '\t');
+  getline(infile, HP, '\t');
+  getline(infile, ATK, '\t');
+  getline(infile, DEF, '\t');
+  getline(infile, SPE, '\t');
+  getline(infile, SPD, '\t');
+  getline(infile, Buy, '\t');
+  getline(infile, Sell, '\n');
+
+  stringstream convert0(Number); 
+  convert0 >> x;
+  this->Number = x;
+
+  stringstream convert1(HP); 
+  convert1 >> x; 
+  this->HP = x;
+
+  stringstream convert2(ATK); 
+  convert2 >> x;
+  this->ATK = x;
+
+  stringstream convert3(DEF); 
+  convert3 >> x;
+  this->DEF = x;
+
+  stringstream convert4(SPE); 
+  convert4 >> x;
+  this->SPE = x;
+
+  stringstream convert5(SPD); 
+  convert5 >> x;
+  this->SPD = x;
+
+  stringstream convert6(Buy); 
+  convert6 >> x;
+  this->Buy = x;
+
+  stringstream convert7(Sell); 
+  convert7 >> x;
+  this->Sell = x;
+
   this->Name = Name;
+  CONDITION Condition1 = convert(Condition);
+  this->Condition = Condition1;
 }
 
-void ITEM::set_Condition()
-{
-  CONDITION Condition = PARALYZED;          //Pulled from the text file
-  this->Condition = Condition;
-}
-
-void ITEM::set_HP()
-{
-  int HP = 20;          //Pulled from the text file
-  this->HP = HP;
-}
-
-void ITEM::set_ATK()
-{
-  int ATK = 21;          //Pulled from the text file
-  this->ATK = ATK;
-}
-
-void ITEM::set_DEF()
-{
-  int DEF = 22;          //Pulled from the text file
-  this->DEF = DEF;
-}
-
-void ITEM::set_SPA()
-{
-  int SPA = 23;          //Pulled from the text file
-  this->SPA = SPA;
-}
-
-void ITEM::set_SPD()
-{
-  int SPD = 24;          //Pulled from the text file
-  this->SPD = SPD;
-}
-
-void ITEM::set_Number(int Number)
+void ITEM::set_Number(int Number) 
 {
   this->Number = Number;
 }
 
 //GETTERS
-string ITEM::get_Name()
+int ITEM::get_Number() const
+{
+  return Number;
+}
+
+string ITEM::get_Name() const
 {
   return Name;
 }
 
-CONDITION ITEM::get_Condition()
+CONDITION ITEM::get_Condition() const
 {
   return Condition;
 }
 
-int ITEM::get_HP()
+int ITEM::get_HP() const
 {
   return HP;
 }
 
-int ITEM::get_ATK()
+int ITEM::get_ATK() const
 {
   return ATK;
 }
 
-int ITEM::get_DEF()
+int ITEM::get_DEF() const
 {
   return DEF;
 }
 
-int ITEM::get_SPA()
+int ITEM::get_SPE() const
 {
-  return SPA;
+  return SPE;
 }
 
-int ITEM::get_SPD()
+int ITEM::get_SPD() const
 {
   return SPD;
 }
 
+int ITEM::get_Buy() const
+{
+  return Buy;
+}
+
+int ITEM::get_Sell() const
+{
+  return Sell;
+}
+
 int ITEM::Random_Item()
 {
-  int Random_Number = 33;
+  int elapsed_seconds = time(nullptr);
+  srand(elapsed_seconds);
+
+  int Random_Number = rand() % 17;
   return Random_Number;
 }
+
+// void ITEM::Appliable_Item(int Item_Index)
+// {
+//   ITEM Item(Item_Index);
+//   Pokemon->set_HPCurrent(Item.get_HP());
+//   Pokemon->set_BattleStat("ATK", Item.get_ATK());
+//   Pokemon->set_BattleStat("DEF", Item.get_DEF());
+//   Pokemon->set_BattleStat("SPE", Item.get_SPE());
+//   Pokemon->set_BattleStat("SPD", Item.get_SPD());
+//   Pokemon->set_CurrentCondition(Item.get_Condition());
+// }
 
 bool ITEM::Pokeball(POKEMON Pokemon, ITEM Item)
 {
   bool capture = true;
   return capture;
+}
+
+CONDITION ITEM::convert(const std::string& str)
+{
+    if(str == "BURNED")             return BURNED;
+    else if(str == "FROZEN")        return FROZEN;
+    else if(str == "PARALYZED")     return PARALYZED;
+    else if(str == "POISONED")      return POISONED;
+    else if(str == "ASLEEP")        return ASLEEP;
+    else if(str == "CONFUSED")      return CONFUSED;
+    else if(str == "ATTRACTED")     return ATTRACTED;
+    else if(str == "CURSED")        return CURSED;
+    else                            return NO_CONDITION;
 }

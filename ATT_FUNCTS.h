@@ -1,4 +1,5 @@
 //All of the Attack Functions
+//There is an issue with Sing in particular
 
 #ifndef ATT_FUNCTS_H
 #define ATT_FUNCTS_H
@@ -11,7 +12,7 @@ using std::cout;
 
 namespace ATT_FUNCTS
 {
-    enum ATTACK
+    enum ATTACKS
     {
       //PHYSICAL ATTACKS
       BARRAGE, BIDE, BIND, BITE, BODY_SLAM, BONE_CLUB, BONEMERANG,
@@ -54,22 +55,22 @@ namespace ATT_FUNCTS
       WATER_GUN,
 
       //STATUS ATTACKS
-      ACID_ARMOR, AGILITY, AMNESIA,
-      BARRIER,
-      CONFUSE_RAY, CONVERSION,
-      DEFENSE_CURL, DISABLE, DOUBLE_TEAM,
-      FLASH, FOCUS_ENERGY,
-      GLARE, GROWL, GROWTH,
-      HARDEN, HAZE, HYPNOSIS,
-      KINESIS,
-      LEECH_SEED, LEER, LIGHT_SCREEN, LOVELY_KISS,
-      MEDITATE, METRONOME, MIMIC, MINIMIZE, MIRROR_MOVE, MIST,
-      POISON_GAS, POISON_POWDER,
-      RECOVER, REFLECT, REST, ROAR,
-      SAND_ATTACK, SCREECH, SHARPEN, SING, SLEEP_POWDER, SMOKESCREEN, SOFT_BOILED,
-      SPLASH, SPORE, STRING_SHOT, STUN_SPORE, SUBSTITUTE, SUPERSONIC, SWORDS_DANCE,
-      TAIL_WHIP, TELEPORT, THUNDER_WAVE, TOXIC, TRANSFORM,
-      WHIRLWIND, WITHDRAW
+      // ACID_ARMOR, AGILITY, AMNESIA,
+      // BARRIER,
+      // CONFUSE_RAY, CONVERSION,
+      // DEFENSE_CURL, DISABLE, DOUBLE_TEAM,
+      // FLASH, FOCUS_ENERGY,
+      // GLARE, GROWL, GROWTH,
+      // HARDEN, HAZE, HYPNOSIS,
+      // KINESIS,
+      // LEECH_SEED, LEER, LIGHT_SCREEN, LOVELY_KISS,
+      // MEDITATE, METRONOME, MIMIC, MINIMIZE, MIRROR_MOVE, MIST,
+      // POISON_GAS, POISON_POWDER,
+      // RECOVER, REFLECT, REST, ROAR,
+      // SAND_ATTACK, SCREECH, SHARPEN, SING_FUNCT, SLEEP_POWDER, SMOKESCREEN, SOFT_BOILED,
+      // SPLASH, SPORE, STRING_SHOT, STUN_SPORE, SUBSTITUTE, SUPERSONIC, SWORDS_DANCE,
+      // TAIL_WHIP, TELEPORT, THUNDER_WAVE, TOXIC, TRANSFORM,
+      // WHIRLWIND, WITHDRAW
     };
 
     //SPECIAL ATTACKS_____________________________________________________________
@@ -774,7 +775,7 @@ namespace ATT_FUNCTS
     {
       cout << "Sharpen Function was called.";
     }
-    void Sing(POKEMON Attacker, POKEMON Defender)
+    void Sing_Funct(POKEMON Attacker, POKEMON Defender)
     {
       cout << "Sing Function was called.";
     }
@@ -968,61 +969,61 @@ namespace ATT_FUNCTS
       case WRAP: Wrap(Attacker, Defender); break;
 
       //STATUS
-      case ACID_ARMOR: Acid_Armor(Attacker, Defender); break;
-      case AGILITY: Agility(Attacker, Defender); break;
-      case AMNESIA: Amnesia(Attacker, Defender); break;
-      case BARRIER: Barrier(Attacker, Defender); break;
-      case CONFUSE_RAY: Confuse_Ray(Attacker, Defender); break;
-      case CONVERSION: Conversion(Attacker, Defender); break;
-      case DEFENSE_CURL: Defense_Curl(Attacker, Defender); break;
-      case DISABLE: Disable(Attacker, Defender); break;
-      case DOUBLE_TEAM: Double_Team(Attacker, Defender); break;
-      case FLASH: Flash(Attacker, Defender); break;
-      case FOCUS_ENERGY: Focus_Energy(Attacker, Defender); break;
-      case GLARE: Glare(Attacker, Defender); break;
-      case GROWL: Growl(Attacker, Defender); break;
-      case GROWTH: Growth(Attacker, Defender); break;
-      case HARDEN: Harden(Attacker, Defender); break;
-      case HAZE: Haze(Attacker, Defender); break;
-      case HYPNOSIS: Hypnosis(Attacker, Defender); break;
-      case KINESIS: Kinesis(Attacker, Defender); break;
-      case LEECH_SEED: Leech_Seed(Attacker, Defender); break;
-      case LEER: Leer(Attacker, Defender); break;
-      case LIGHT_SCREEN: Light_Screen(Attacker, Defender); break;
-      case LOVELY_KISS: Lovely_Kiss(Attacker, Defender); break;
-      case MEDITATE: Meditate(Attacker, Defender); break;
-      case METRONOME: Metronome(Attacker, Defender); break;
-      case MIMIC: Mimic(Attacker, Defender); break;
-      case MINIMIZE: Minimize(Attacker, Defender); break;
-      case MIRROR_MOVE: Mirror_Move(Attacker, Defender); break;
-      case MIST: Mist(Attacker, Defender); break;
-      case POISON_GAS: Poison_Gas(Attacker, Defender); break;
-      case POISON_POWDER: Poison_Powder(Attacker, Defender); break;
-      case RECOVER: Recover(Attacker, Defender); break;
-      case REFLECT: Reflect(Attacker, Defender); break;
-      case REST: Rest(Attacker, Defender); break;
-      case ROAR: Roar(Attacker, Defender); break;
-      case SAND_ATTACK: Sand_Attack(Attacker, Defender); break;
-      case SCREECH: Screech(Attacker, Defender); break;
-      case SHARPEN: Sharpen(Attacker, Defender); break;
-      case SING: Sing(Attacker, Defender); break;
-      case SLEEP_POWDER: Sleep_Powder(Attacker, Defender); break;
-      case SMOKESCREEN: Smokescreen(Attacker, Defender); break;
-      case SOFT_BOILED: Soft_Boiled(Attacker, Defender); break;
-      case SPLASH: Splash(Attacker, Defender); break;
-      case SPORE: Spore(Attacker, Defender); break;
-      case STRING_SHOT: String_Shot(Attacker, Defender); break;
-      case STUN_SPORE: Stun_Spore(Attacker, Defender); break;
-      case SUBSTITUTE: Substitute(Attacker, Defender); break;
-      case SUPERSONIC: Supersonic(Attacker, Defender); break;
-      case SWORDS_DANCE: Swords_Dance(Attacker, Defender); break;
-      case TAIL_WHIP: Tail_Whip(Attacker, Defender); break;
-      case TELEPORT: Teleport(Attacker, Defender); break;
-      case THUNDER_WAVE: Thunder_Wave(Attacker, Defender); break;
-      case TOXIC: Toxic(Attacker, Defender); break;
-      case TRANSFORM: Transform(Attacker, Defender); break;
-      case WHIRLWIND: Whirlwind(Attacker, Defender); break;
-      case WITHDRAW: Withdraw(Attacker, Defender); break;
+      // case ACID_ARMOR: Acid_Armor(Attacker, Defender); break;
+      // case AGILITY: Agility(Attacker, Defender); break;
+      // case AMNESIA: Amnesia(Attacker, Defender); break;
+      // case BARRIER: Barrier(Attacker, Defender); break;
+      // case CONFUSE_RAY: Confuse_Ray(Attacker, Defender); break;
+      // case CONVERSION: Conversion(Attacker, Defender); break;
+      // case DEFENSE_CURL: Defense_Curl(Attacker, Defender); break;
+      // case DISABLE: Disable(Attacker, Defender); break;
+      // case DOUBLE_TEAM: Double_Team(Attacker, Defender); break;
+      // case FLASH: Flash(Attacker, Defender); break;
+      // case FOCUS_ENERGY: Focus_Energy(Attacker, Defender); break;
+      // case GLARE: Glare(Attacker, Defender); break;
+      // case GROWL: Growl(Attacker, Defender); break;
+      // case GROWTH: Growth(Attacker, Defender); break;
+      // case HARDEN: Harden(Attacker, Defender); break;
+      // case HAZE: Haze(Attacker, Defender); break;
+      // case HYPNOSIS: Hypnosis(Attacker, Defender); break;
+      // case KINESIS: Kinesis(Attacker, Defender); break;
+      // case LEECH_SEED: Leech_Seed(Attacker, Defender); break;
+      // case LEER: Leer(Attacker, Defender); break;
+      // case LIGHT_SCREEN: Light_Screen(Attacker, Defender); break;
+      // case LOVELY_KISS: Lovely_Kiss(Attacker, Defender); break;
+      // case MEDITATE: Meditate(Attacker, Defender); break;
+      // case METRONOME: Metronome(Attacker, Defender); break;
+      // case MIMIC: Mimic(Attacker, Defender); break;
+      // case MINIMIZE: Minimize(Attacker, Defender); break;
+      // case MIRROR_MOVE: Mirror_Move(Attacker, Defender); break;
+      // case MIST: Mist(Attacker, Defender); break;
+      // case POISON_GAS: Poison_Gas(Attacker, Defender); break;
+      // case POISON_POWDER: Poison_Powder(Attacker, Defender); break;
+      // case RECOVER: Recover(Attacker, Defender); break;
+      // case REFLECT: Reflect(Attacker, Defender); break;
+      // case REST: Rest(Attacker, Defender); break;
+      // case ROAR: Roar(Attacker, Defender); break;
+      // case SAND_ATTACK: Sand_Attack(Attacker, Defender); break;
+      // case SCREECH: Screech(Attacker, Defender); break;
+      // case SHARPEN: Sharpen(Attacker, Defender); break;
+      // case SING_FUNCT: Sing_Funct(Attacker, Defender); break;
+      // case SLEEP_POWDER: Sleep_Powder(Attacker, Defender); break;
+      // case SMOKESCREEN: Smokescreen(Attacker, Defender); break;
+      // case SOFT_BOILED: Soft_Boiled(Attacker, Defender); break;
+      // case SPLASH: Splash(Attacker, Defender); break;
+      // case SPORE: Spore(Attacker, Defender); break;
+      // case STRING_SHOT: String_Shot(Attacker, Defender); break;
+      // case STUN_SPORE: Stun_Spore(Attacker, Defender); break;
+      // case SUBSTITUTE: Substitute(Attacker, Defender); break;
+      // case SUPERSONIC: Supersonic(Attacker, Defender); break;
+      // case SWORDS_DANCE: Swords_Dance(Attacker, Defender); break;
+      // case TAIL_WHIP: Tail_Whip(Attacker, Defender); break;
+      // case TELEPORT: Teleport(Attacker, Defender); break;
+      // case THUNDER_WAVE: Thunder_Wave(Attacker, Defender); break;
+      // case TOXIC: Toxic(Attacker, Defender); break;
+      // case TRANSFORM: Transform(Attacker, Defender); break;
+      // case WHIRLWIND: Whirlwind(Attacker, Defender); break;
+      // case WITHDRAW: Withdraw(Attacker, Defender); break;
     }
   }
 }

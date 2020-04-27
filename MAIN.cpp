@@ -1,5 +1,5 @@
 // Pokemon Project
-//Authors: Derryk Theberge and Luke McLaughlin
+// Authors: Derryk Theberge and Luke McLaughlin
 
 #include <iostream>
 #include<stdio.h>
@@ -14,16 +14,16 @@
 #include "PERSON.h"
 #include "PLAYER.h"
 #include "POKEMON.h"
-#include "ENUMS.h"
+#include "GAME_INFO.h"
 #include "ATT_FUNCTS.h"
 #include "INTERACTION.h"
 
 using namespace std;
-using namespace ENUMS;
 using namespace ATT_FUNCTS;
 
 //Initializing Static Members
-int NPC::NPC_Count = 0;
+int POKEMON::NPCs_Defeated = 0;
+int INTERACTION::Walk_Count = 0;
 map<int, string> POKEMON::Seen = {};
 
 int main()
@@ -31,63 +31,34 @@ int main()
   system("clear");
 
   INTERACTION delay;
-
   PLAYER USER;
-  POKEMON Starter = INTERACTION::Introduction(&USER);
 
-  //cout << "Starters Name: " << Starter.get_Name();
+  INTERACTION::Introduction(&USER);
 
-  //delay << "Name of user: " << USER.get_Name();
+  int choice;
+  do
+  {
+    INTERACTION::Display_Menu(1);
+    cout << "Enter your choice: ";
+    cin >> choice;
+    switch(choice)
+    {
+      case 1: INTERACTION::Walk(&USER);
+              break;
+      case 2: system("clear");
+              INTERACTION::ASCII(18);
+              INTERACTION::Bag(&USER);
+              cin.ignore();
+              INTERACTION::Continue();
+              break;
+      case 3: INTERACTION::Party(&USER);
+              break;
+      case 4: INTERACTION::Pokedex();
+              break;
+    }
+  } while(POKEMON::NPCs_Defeated <= 10);
 
-  // PLAYER Glock("Glockinator");
-  // NPC Trainer;
-
-  // cout << endl << endl << "User Name: " << USER.get_Name() << endl;
-  // cout << "User Money: " << USER.get_Money() << endl;
-
-  // sleep(1);
-  // USER.set_Money(33);
-  // cout << "User Money after Transaction: " << USER.get_Money() << endl << endl;
-
-  // sleep(1);
-  // cout << "Trainer Name: " << Trainer.get_Name() << endl;
-  // cout << "Trainer Money: " << Trainer.get_Money() << endl << endl;
-
-  // POKEMON pokemon1;
-  // USER.add_Party(pokemon1);
-
-  // sleep(1);
-  // POKEMON temp = USER.get_Party(0);
-  // cout << "First Pokemon: " << temp.get_Name() << endl;
-  // cout << "Pokemon's Pokedex Number: " << temp.get_PokedexNumber() << endl;
-  // cout << "NPC Count: " << NPC::NPC_Count << endl << endl;
-
-  // int FunctionDesired;
-
-  // cout << "Enter the functions name wanted (Any of the Attacks (No error check)): ";
-  // cin >> FunctionDesired;
-
-  // ATT_FUNCT_CALL(FunctionDesired, pokemon1, pokemon1);
-
-  // cout << endl << endl;
-
-  // //cout << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus";
-  // delay << "Hello everyone what all have you been doing this day. It is really boring because of the Corona Virus." << "What's up dawg";
-
-  // int delaychuAttack = pokemon1.get_ATK();
-  // cout << "delaychu's OB_ATK Stat: " <<  delaychuAttack << endl;
-
-  // pokemon1.set_BattleStat("ATK", pokemon1.get_ATK());
-
-  // cout << "delaychu's Battle Attack Stat: " <<  pokemon1.get_BattleStat("ATK") << endl;
-
-  // pokemon1.set_BattleStat("ATK", -5);
-  // cout << "delaychu's Battle Attack Stat: " <<  pokemon1.get_BattleStat("ATK") << endl;
-
-  // cout << endl << endl << endl;
-  // POKEMON::get_Seen();
+  delay << "\nYou have become all of the Trainers! ";
 
   return 0;
-
-
 }

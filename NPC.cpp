@@ -6,18 +6,15 @@
 NPC::NPC()
 {
   set_Name("");
+  set_Dialogue();
 
-  Money = 0;
-  set_Money(0);
+  this->Money = 0;
 
   int count = NPC_PokemonCount();
   for(int i = 0; i < count; i++)
   {
     add_Party(POKEMON());
   }
-
-  //Increment Object Count Every Instantiation
-  NPC_Count++;
 }
 
 //STATIC FUNCTION
@@ -26,23 +23,33 @@ NPC::NPC()
 //SETTER FUNCTIONS
 void NPC::set_Name(string Name)
 {
-  string random_Name = "Bob";
+  int random;
+  string random_Name;
 
-  //Pull Name from text file in place of the above hardcoding
-  this->Name = random_Name;
+  int elapsed_seconds = time(nullptr);
+  srand(elapsed_seconds);
+  random = (rand() % 26) + 1;
+
+  ifstream infile;
+  infile.open("NPC_INFO.txt");
+
+  for (int i = 0; i < random - 1; ++i)
+  {
+    infile.ignore(1000, '\n');
+  }
+  infile.ignore(100, '\t');
+  getline(infile, Name, '\t');
+
+  this->Name = Name;
+  infile.close();
 }
 
 void NPC::set_Money(int Transaction)
 {
   //Generate a Pseudorandom Number to add to the Money
-  int random_Money = 69;
+  int random_Money = 70;
 
   this->Money += random_Money;
-}
-
-void NPC::add_Party(POKEMON Pokemon)
-{ //Add only if there is 0 to 5 Pokemon
-  Party.push_back(Pokemon);
 }
 
 void NPC::remove_Party(int indexToRemove)
@@ -52,9 +59,45 @@ void NPC::remove_Party(int indexToRemove)
   Party.erase(iter);
 }
 
-//HELPER FUNCTIONS
 int NPC::NPC_PokemonCount()
 {
-  int PokemonCount = 0;
+  int PokemonCount = 3;
+
   return PokemonCount;
+}
+
+void NPC::set_Dialogue()
+{
+  int random;
+  string Intro, Exit;
+
+  int elapsed_seconds = time(nullptr);
+  srand(elapsed_seconds);
+  random = (rand() % 109) + 28;
+
+  ifstream infile;
+  infile.open("NPC_INFO.txt");
+
+  for (int i = 0; i < random - 1; ++i)
+  {
+    infile.ignore(1000, '\n');
+  }
+
+  infile.ignore(100, '\t');
+  getline(infile, Intro, '\t');
+  getline(infile, Exit, '\n');
+
+  this->Intro = Intro;
+  this->Exit = Exit;
+  infile.close();
+}
+
+string NPC::get_Intro() const
+{
+  return Intro;
+}
+
+string NPC::get_Exit() const
+{
+  return Exit;
 }

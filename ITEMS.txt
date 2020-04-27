@@ -1,0 +1,18 @@
+Number	Name	Condition	HP	ATK	DEF	SPE	SPD	Buy	Sell
+0	Antidote	Poison	0	0	0	0	0	100	50
+1	Awakening	SLEEP	0	0	0	0	0	200	125
+2	Burn Heal	BURN	0	0	0	0	0	250	125
+3	Ice Heal	FROZEN	0	0	0	0	0	250	125
+4	Paralyze Heal	PARALYZE	0	0	0	0	0	250	125
+5	Full Heal	ALL	0	0	0	0	0	600	300
+6	Full Restore	ALL	-1	0	0	0	0	3000	1500
+7	Fresh Water	NA	50	0	0	0	0	200	100
+8	Hyper Potion	NA	200	0	0	0	0	1500	750
+9	Lemonade	NA	80	0	0	0	0	350	175
+10	Max Potion	NA	-1	0	0	0	0	2500	1250
+11	Potion	NA	20	0	0	0	0	300	150
+12	Soda Pop	NA	60	0	0	0	0	300	150
+13	Super Potion	NA	70	0	0	0	0	700	350
+14	Pokeball	NA	0	0	0	0	0	200	100
+15	Great Ball	NA	0	0	0	0	0	600	300
+16	Ultra Ball	NA	0	0	0	0	0	1200	600
