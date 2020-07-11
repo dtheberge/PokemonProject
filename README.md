@@ -12,3 +12,5 @@ but these aspects will be removed ( such as moving around on a map or talking to
 
 Instead, we will focus on the aspects that fall under any of the following: battling, finding items, buying items, selling items, and
 encountering wild Pokémon.
+
+For the Windows run.exe you must have MinGW GNU
